@@ -1,0 +1,288 @@
+// $main--font: Roboto
+// $main--color: #445666
+// $second--color: #1C85BC
+// $shadow--color: #E8F2FF
+html
+	font-size: 10px
+body
+	width: 100%
+	height: 100%
+	margin: 0
+	padding: 0
+	font-family: Roboto
+a 
+	text-decoration: none!important
+.main 
+	// background-color: orange
+	padding: 0!important
+.carousel--indicator
+	width: 10px!important
+	height: 10px!important
+	border-radius: 100%
+.carousel--indicators
+	z-index: 300!important
+.carousel--item__content 
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	z-index: 100
+	background-color: rgba(0, 68, 103, 0.6)
+	width: 100%
+	height: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	color: white
+	font-family: $main--font
+	.carousel--item__content--text 
+		font-size: 2rem
+		font-weight: 300
+	.carousel--item__content--motto
+		font-size: 5rem
+		font-weight: 500
+	.carousel--item__content--button
+		border: none
+		font-size: 14px
+		font-weight: 300
+		padding: 0.6rem 3.6rem
+		border-radius: 25px
+		color: $second--color
+		background-color: white
+		text-decoration: none
+		&:hover
+			background-color: $second--color
+			color: white
+.content--container
+	width: 70%!important
+	color: $main--color
+	// background-color: #ECE7A7
+.content--header
+	font: 500 32px $main--font
+	margin-top: 8%
+	margin-bottom: 4%
+	display: flex
+	justify-content: center
+	color: $main--color
+.content--type
+	text-align: center
+	font-family: $main--font
+	font-size: 14px
+	color: $main--color
+	.content--type--name
+		font-weight: 500
+	.content--type--text
+		font-weight: 300
+.equipment--header
+	margin-bottom: 16%
+.flex--content--row
+	display: flex
+	justify-content: space-between
+.second--content--type
+	position: relative
+	width: 30%
+	.second--content--type--img
+		position: absolute
+		top: -75px
+		left: 0
+		right: 0
+		margin-left: auto
+		margin-right: auto
+	.second--content--type--name
+		padding-top: 20%
+	.second--content--type__direction--img
+		opacity: 0
+		position: absolute
+		bottom: -18px
+		left: 0
+		right: 0
+		margin-left: auto
+		margin-right: auto
+		// cursor: pointer
+	&:hover
+		box-shadow: 4px 4px 20px $shadow--color
+		.second--content--type__direction--img
+			opacity: 1
+.information--form
+	display: flex
+	justify-content: center
+.information--button
+	cursor: pointer
+	margin: 8% auto 4% auto
+	border: solid 1px $button--color
+	font-size: 14px
+	font-weight: 300
+	padding: 0.6rem 3.6rem
+	border-radius: 25px
+	color: white!important
+	background-color: $button--color
+	&:hover
+		color: $button--color!important
+		background-color: white
+.news--content--type
+	position: relative
+	width: 30%
+	text-align: left
+	border-radius: 7%
+	border: solid 0.25px $news--border--color
+	// background-color: #83F99A
+	&:hover
+		border: none
+		box-shadow: 4px 4px 20px $shadow--color
+	// box-shadow: 4px 4px 20px red
+	// background-color: #A7D4EC
+	.news--content--type__img
+		width: 100%
+.time 
+	font-size: 14px
+.news--link--box
+	position: relative
+	cursor: pointer
+	margin-bottom: 4.2rem
+	.news--link
+		font-family: Roboto
+		font-size: 14px
+		font-weight: 300
+		color: $news--border--color
+		&:hover
+			border-bottom: solid 1px
+.partners
+	// background-color: maroon
+.carousel--shadow
+	box-shadow: 3px 3px 15px $shadow--color
+.partner--group
+	// background-color: #CFECA7
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+.partner--item__img
+	opacity: 0.53
+	&:hover
+		opacity: 1
+.grp--controls
+	position: relative!important
+	margin: 3% auto 
+	// background-color: blue
+	.active 
+		background-color: $button--color
+.grp--control
+	// padding: 0
+	width: 17px!important
+	height: 17px!important
+	border-radius: 100%
+	border: 0!important
+	// background-color: green!important
+	box-shadow: 0 3px 6px black
+// .grp--control--active
+// 	background-color: $button--color!important
+.page--footer
+	background-color: $second--color
+	display: flex
+	justify-content: center
+	// flex-direction: column
+	color: white
+.page--footer__biggestDiv
+	width: 76.57%
+.footer--inner__logo
+	font-size: 10px
+	margin-left: 1em
+.footer--inner
+	// width: 76.57%
+	// background-color: #C29C0F
+	margin-top: 6rem
+	a
+		color: white!important
+		cursor: pointer
+	.footer--contents
+		// background-color: green
+		// color: white
+		font-size: 14px!important
+		font-family: Roboto
+		.footer--content
+			display: flex
+			flex-direction: column
+		.footer--link
+			font-weight: 400
+			margin-bottom: 13px
+			&:hover
+				opacity: 0.5
+		.contact__number
+			@extend %contactElements
+		.contact__email
+			@extend %contactElements
+		.contact__address
+			@extend %contactElements
+%contactElements
+	font-weight: 300
+	margin-bottom: 10px
+	&:hover
+		opacity: 0.5
+.footer--content__first
+	width: 19.58%
+	// background-color: maroon
+.footer--content__second
+	width: 27.88%
+	// background-color: blue
+.footer--content__contact
+	width: 41.89%
+	// background-color: teal
+.social--accounts__link
+	&:hover
+		opacity: 0.5
+.instagram--link
+	font-size: 10px
+	margin-right: 1.6em
+.copyright--line
+	margin-top: 9.3rem
+	padding-top: 1.3rem
+	// background-color: olive
+	// font-family: Roboto
+	font-size: 12px
+	font-weight: 300
+	border-top: solid 1px white
+	.copyright--line__text
+		margin-bottom: 4.6rem
+@media (max-width: 1050px)
+	.page--footer__biggestDiv
+		width: 90%
+@media (max-width: 900px)
+	.page--footer__biggestDiv
+		width: 95%
+	.footer--inner__logo
+		font-size: 6px
+	.instagram--link
+		font-size: 6px
+@media (max-width: 767px)
+	html 
+		font-size: 6px
+	.page--footer__biggestDiv
+		width: 76.57%
+	.footer--content__first
+		width: 100%
+	.footer--content__second
+		width: 100%
+	.footer--content__contact
+		width: 100%
+	.equipment--header
+		margin-bottom: 0
+	.second--content--type
+		width: 100%
+		margin-top: 30%
+	.news--header
+		margin-bottom: 0
+	.news--content--type
+		width: 100%
+		margin-top: 20%
+@media (max-width: 590px)
+	html 
+		font-size: 6px
+	.second--content--type
+		margin-top: 40%
+@media (max-width: 390px)
+	html 
+		font-size: 4px
+	.second--content
+		margin-top: 43%
+@import navbar

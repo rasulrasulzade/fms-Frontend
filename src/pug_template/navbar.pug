@@ -1,0 +1,37 @@
+nav.navbar.navbar-expand-lg.navbarr
+  a.navbar-brand(href='#').navbar--logo
+    img(src="img/fmsLogo.png")
+  button.navbar-toggler.nav_icon_color(type='button' data-toggle='collapse' data-target='#navbarTogglerDemo02' aria-controls='navbarTogglerDemo02' aria-expanded='false' aria-label='Toggle navigation')
+    //- span.navbar-toggler-icon.navigation_toggler_icon
+    //- i.fas.fa-bars
+    img.burgerIcon(src="img/burgerIcon.png")
+    //- .div_for_icon_img
+    //-   img.icon_img(src="img/white-menu-icon-png-18.jpg")
+  #navbarTogglerDemo02.collapse.navbar-collapse.collapse--box
+    ul.navbar-nav.mt-2.mt-lg-0.ul--box
+      li.nav-item
+        a.nav-link.navbar__link.active__link(href='#page') Haqqımızda 
+      li.nav-item
+        a.nav-link.navbar__link(href='#haqqimizda') Xidmətlərimiz
+      li.nav-item
+        a.nav-link.navbar__link(href='#xidmetler') Wialon
+      li.nav-item
+        a.nav-link.navbar__link(href='#tarifler') Avadanlıqlar
+      li.nav-item
+        a.nav-link.navbar__link(href='#hosting') Müştərilərə
+      li.nav-item
+        a.nav-link.navbar__link(href='#odenis_usullari') Korporativ Əməkdaşlıq
+      li.nav-item
+        a.nav-link.navbar__link(href='#footer') Xəbərlər
+      li.nav-item
+        a.nav-link.navbar__link(href='#odenis_usullari') Əlaqə
+    .collapse--box__search
+      form(action="", method="get")
+        input#search.b-search-input
+        label(for="search")
+          i.fa.fa-search
+    .collapse--box__language
+      select
+        option AZ
+        option EN
+        option RU

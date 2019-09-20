@@ -1,0 +1,94 @@
+$main--font: Roboto
+$main--color: #445666
+// .collapse--box__search
+//   position: absolute
+//   // right: 10%
+// .collapse--box__language
+//   position: absolute
+//   right: 10%
+.b-search-input
+  width: 100%
+  max-width: 0
+  opacity: 0
+  transition: .5s all  
+.b-search-input:focus
+  max-width: 100px
+  opacity: 1
+  border-radius: 3px
+  margin-right: 2px
+.navbarr
+  padding: 0
+  // background-color: aqua
+  font: 600 14px $main--font
+  // color: $main__color
+  text-decoration: none
+.navbar--logo
+  display: flex!important
+  justify-content: center
+  // background-color: gray
+  width: 28%
+.burgerIcon
+  width: 25px
+.collapse--box
+  // display: flex
+  // justify-content: flex-end
+  // background-color: maroon
+  // max-width: 85%
+  // width: 60%!important
+.ul--box
+  // background-color: khaki
+  float: right
+  // .collapse--box__search
+  //   float: right
+  // .collapse--box__language
+  //   float: right
+.navbar__link
+  min-width: 100%
+  color: $main--color
+  font: 600 14px $main--font
+  &:hover
+    opacity: 0.6
+.collapse--box__search
+  margin-right: 2rem
+@media (max-width: 1195px)
+  .navbar--logo
+    width: 27%
+@media (max-width: 1180px)
+  .navbar--logo
+    width: 25%
+@media (max-width: 1041px)
+  .navbar--logo
+    width: 15%
+@media (max-width: 991px)
+  .ul--box
+    display: block
+    float: left
+    margin-left: 2rem
+  .collapse--box__search
+    margin-left: 2rem
+    // display: block
+    // float: left 
+  .collapse--box__language
+    margin-left: 2rem
+    // display: block
+    // float: left 
+  .collapse--box
+    // width: 650px!important
+    // display: flex
+    // flex-direction: column
+    // // flex-wrap: wrap
+    // justify-content: flex-start
+    // right: 0
+  .collapse--box__search
+    // background-color: #83F9B9
+    width: 142px
+    margin-right: 0
+    // position: absolute
+    // bottom: 0
+    // right: 0
+    // float: right 
+  .collapse--box__language
+    // background-color: #83C2F9
+    width: 142px
+    // position: absolute
+    // float: right 
