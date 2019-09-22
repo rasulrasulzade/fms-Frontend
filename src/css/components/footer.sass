@@ -1,0 +1,76 @@
+.page--footer
+	background-color: $second--color
+	display: flex
+	justify-content: center
+	color: white
+.page--footer__biggestDiv
+	width: 76.57%
+.footer--inner__logo
+	font-size: 10px
+	margin-left: 1em
+.footer--inner
+	margin-top: 6rem
+	a
+		color: white!important
+		cursor: pointer
+	.footer--contents
+		font-size: 14px!important
+		font-family: Roboto
+		.footer--content
+			display: flex
+			flex-direction: column
+		.footer--link
+			font-weight: 400
+			margin-bottom: 13px
+			&:hover
+				opacity: 0.5
+		.contact__number
+			@extend %contactElements
+		.contact__email
+			@extend %contactElements
+		.contact__address
+			@extend %contactElements
+%contactElements
+	font-weight: 300
+	margin-bottom: 10px
+	&:hover
+		opacity: 0.5
+.footer--content__first
+	width: 19.58%
+.footer--content__second
+	width: 27.88%
+.footer--content__contact
+	width: 41.89%
+.social--accounts__link
+	&:hover
+		opacity: 0.5
+.instagram--link
+	font-size: 10px
+	margin-right: 1.6em
+.copyright--line
+	margin-top: 9.3rem
+	padding-top: 1.3rem
+	font-size: 12px
+	font-weight: 300
+	border-top: solid 1px white
+	.copyright--line__text
+		margin-bottom: 4.6rem
+@media (max-width: 1050px)
+	.page--footer__biggestDiv
+		width: 90%
+@media (max-width: 900px)
+	.page--footer__biggestDiv
+		width: 95%
+	.footer--inner__logo
+		font-size: 6px
+	.instagram--link
+		font-size: 6px
+@media (max-width: 767px)
+	.page--footer__biggestDiv
+		width: 76.57%
+	.footer--content__first
+		width: 100%
+	.footer--content__second
+		width: 100%
+	.footer--content__contact
+		width: 100%
