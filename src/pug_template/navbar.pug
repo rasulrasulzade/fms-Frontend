@@ -1,37 +1,46 @@
-nav.navbar.navbar-expand-lg.navbarr
-  a.navbar-brand(href='#').navbar--logo
-    img(src="img/fmsLogo.png")
-  button.navbar-toggler.nav_icon_color(type='button' data-toggle='collapse' data-target='#navbarTogglerDemo02' aria-controls='navbarTogglerDemo02' aria-expanded='false' aria-label='Toggle navigation')
-    //- span.navbar-toggler-icon.navigation_toggler_icon
-    //- i.fas.fa-bars
-    img.burgerIcon(src="img/burgerIcon.png")
-    //- .div_for_icon_img
-    //-   img.icon_img(src="img/white-menu-icon-png-18.jpg")
-  #navbarTogglerDemo02.collapse.navbar-collapse.collapse--box
-    ul.navbar-nav.mt-2.mt-lg-0.ul--box
-      li.nav-item
-        a.nav-link.navbar__link.active__link(href='') Haqqımızda 
-      li.nav-item
-        a.nav-link.navbar__link(href='') Xidmətlərimiz
-      li.nav-item
-        a.nav-link.navbar__link(href='') Wialon
-      li.nav-item
-        a.nav-link.navbar__link(href='') Avadanlıqlar
-      li.nav-item
-        a.nav-link.navbar__link(href='') Müştərilərə
-      li.nav-item
-        a.nav-link.navbar__link(href='') Korporativ Əməkdaşlıq
-      li.nav-item
-        a.nav-link.navbar__link(href='') Xəbərlər
-      li.nav-item
-        a.nav-link.navbar__link(href='') Əlaqə
-    .collapse--box__search
-      form(action="", method="get")
-        input#search.b-search-input
-        label(for="search")
-          i.fa.fa-search
-    .collapse--box__language
-      select
-        option AZ
-        option EN
-        option RU
+.container
+  nav.navbar.navbar-expand-lg.navbarr
+    a.navbar-brand(href='#').navbar--logo
+      img.img-fluid(src="img/fmsLogo.png")
+    button.navbar-toggler.nav_icon_color(type='button' data-toggle='collapse' data-target='#navbarTogglerDemo02' aria-controls='navbarTogglerDemo02' aria-expanded='false' aria-label='Toggle navigation')
+      //- span.navbar-toggler-icon.navigation_toggler_icon
+      //- i.fas.fa-bars
+      img.burgerIcon(src="img/burgerIcon.png")
+      //- .div_for_icon_img
+      //-   img.icon_img(src="img/white-menu-icon-png-18.jpg")
+    #navbarTogglerDemo02.collapse.navbar-collapse.collapse--box
+      .searchBox
+        form.searchForm(action="", method="get")
+          .input-group
+            input.form-control.searchInput(type="text")
+            buttton.btn-default.searchBtn(type="submit")
+              | Axtar
+      ul.navbar-nav.mt-lg-0.ul--box
+        li.nav-item
+          a.nav-link.navbar__link(href='') Haqqımızda 
+        li.nav-item
+          a.nav-link.navbar__link(href='') Xidmətlərimiz
+        li.nav-item
+          a.nav-link.navbar__link(href='') Wialon
+        li.nav-item
+          a.nav-link.navbar__link(href='') Avadanlıqlar
+        li.nav-item
+          a.nav-link.navbar__link(href='') Müştərilərə
+        li.nav-item
+          a.nav-link.navbar__link(href='') Korporativ Əməkdaşlıq
+        li.nav-item
+          a.nav-link.navbar__link(href='') Xəbərlər
+        li.nav-item
+          a.nav-link.navbar__link(href='') Əlaqə
+      .collapse--box__search
+        form.collapseBox__form(action="", method="get")
+          //- input#search.b-search-input
+          label(for="search")
+            i.fa.fa-search.searchIcon
+            i.fa.fa-times.timesIcon
+      .collapse--box__language
+        form.option-form
+          select.option-group
+            option.option(value="") AZ
+            option.option(value="") EN
+            option.option(value="") RU

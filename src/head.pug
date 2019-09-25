@@ -18,6 +18,10 @@ html
         link(rel='stylesheet' type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css')
         link(rel='stylesheet' type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css')
 
+        link(rel='stylesheet', type='text/css', href='slick/slick.css')
+        link(rel='stylesheet', type='text/css', href='slick/slick-theme.css')
+        //- script(type='text/javascript', src='slick/slick.min.js')
+
 
 
         link(rel='apple-touch-icon', sizes='180x180', href='img/faviconPackage/apple-touch-icon.png')
@@ -145,7 +149,8 @@ html
                             | FM-Pro4 – yük maşınları, kənd təsərrüfatı maşınları, inşaat texnikası və digər ağır yük nəqliyyat vasitələrində istifadə üçün nəzərdə tutulmuş müasir GPS-treker
                         a.second--content--type__link(href="")
                             img.second--content--type__direction--img(src="img/direction.png")
-                    a.information--button(href="")
+                .row.mt-5
+                    a.mx-auto.information--button(href="")
                         | Daha çox
                 p.content--header.news--header
                     | Xəbərlər
@@ -186,81 +191,85 @@ html
                         .mx-5.mt-5.news--link--box
                             a.news--link(href="")
                                 | Ətraflı oxu
-                form.information--form
-                    a.information--button(href="")
+                .row.mt-5
+                    a.mx-auto.information--button(href="")
                         | Daha çox
-            p.content--header.partners
-                | Partnyorlar
-            #PartnerGroup.carousel.slide(data-ride='carousel')
-                .carousel-inner.carousel--shadow
-                    .carousel-item.active
-                        .partner--group
-                            .partner--item.px-5
-                                a.partner--item__link(href="")
-                                    img.partner--item__img.img-fluid(src="img/partner.png")
-                            .partner--item.px-5
-                                a.partner--item__link(href="")
-                                    img.partner--item__img.img-fluid(src="img/partner.png")
-                            .partner--item.px-5
-                               a.partner--item__link(href="")
-                                    img.partner--item__img.img-fluid(src="img/partner.png")
-                            .partner--item.px-5
-                                a.partner--item__link(href="")
-                                    img.partner--item__img.img-fluid(src="img/partner.png")
-                            .partner--item.px-5
-                                a.partner--item__link(href="")
-                                    img.partner--item__img.img-fluid(src="img/partner.png")
-                            .partner--item.px-5
-                               a.partner--item__link(href="")
-                                    img.partner--item__img.img-fluid(src="img/partner.png")
-                            .partner--item.px-5
-                                a.partner--item__link(href="")
-                                    img.partner--item__img.img-fluid(src="img/partner.png")
-                    .carousel-item
-                        .partner--group
-                            .partner--item.px-5
-                                a.partner--item__link(href="")
-                                    img.partner--item__img.img-fluid(src="img/partner.png")
-                            .partner--item.px-5
-                                a.partner--item__link(href="")
-                                    img.partner--item__img.img-fluid(src="img/partner.png")
-                            .partner--item.px-5
-                               a.partner--item__link(href="")
-                                    img.partner--item__img.img-fluid(src="img/partner.png")
-                            .partner--item.px-5
-                                a.partner--item__link(href="")
-                                    img.partner--item__img.img-fluid(src="img/partner.png")
-                            .partner--item.px-5
-                                a.partner--item__link(href="")
-                                    img.partner--item__img.img-fluid(src="img/partner.png")
-                            .partner--item.px-5
-                               a.partner--item__link(href="")
-                                    img.partner--item__img.img-fluid(src="img/partner.png")
-                            .partner--item.px-5
-                                a.partner--item__link(href="")
-                                    img.partner--item__img.img-fluid(src="img/partner.png")
-                    .carousel-item
-                        .partner--group
-                            .partner--item.px-5
-                                img.partner--item__img.img-fluid(src="img/partner.png")
-                            .partner--item.px-5
-                                img.partner--item__img.img-fluid(src="img/partner.png")
-                            .partner--item.px-5
-                                img.partner--item__img.img-fluid(src="img/partner.png")
-                            .partner--item.px-5
-                                img.partner--item__img.img-fluid(src="img/partner.png")
-                            .partner--item.px-5
-                                img.partner--item__img.img-fluid(src="img/partner.png")
-                            .partner--item.px-5
-                                img.partner--item__img.img-fluid(src="img/partner.png")
-                            .partner--item.px-5
-                                img.partner--item__img.img-fluid(src="img/partner.png")
-                ol.carousel-indicators.grp--controls
-                    li.grp--control.active(data-target='#PartnerGroup', data-slide-to='0')
-                    li.grp--control(data-target='#PartnerGroup', data-slide-to='1')
-                    li.grp--control(data-target='#PartnerGroup', data-slide-to='2')
+                p.content--header.partners
+                    | Partnyorlar
+                include pug_template/slickySlider.pug
+            //- #PartnerGroup.carousel.slide(data-ride='carousel')
+            //-     .carousel-inner.carousel--shadow
+            //-         .carousel-item.active
+            //-             .partner--group
+            //-                 .partner--item.px-5
+            //-                     a.partner--item__link(href="")
+            //-                         img.partner--item__img.img-fluid(src="img/partner.png")
+            //-                 .partner--item.px-5
+            //-                     a.partner--item__link(href="")
+            //-                         img.partner--item__img.img-fluid(src="img/partner.png")
+            //-                 .partner--item.px-5
+            //-                    a.partner--item__link(href="")
+            //-                         img.partner--item__img.img-fluid(src="img/partner.png")
+            //-                 .partner--item.px-5
+            //-                     a.partner--item__link(href="")
+            //-                         img.partner--item__img.img-fluid(src="img/partner.png")
+            //-                 .partner--item.px-5
+            //-                     a.partner--item__link(href="")
+            //-                         img.partner--item__img.img-fluid(src="img/partner.png")
+            //-                 .partner--item.px-5
+            //-                    a.partner--item__link(href="")
+            //-                         img.partner--item__img.img-fluid(src="img/partner.png")
+            //-                 .partner--item.px-5
+            //-                     a.partner--item__link(href="")
+            //-                         img.partner--item__img.img-fluid(src="img/partner.png")
+            //-         .carousel-item
+            //-             .partner--group
+            //-                 .partner--item.px-5
+            //-                     a.partner--item__link(href="")
+            //-                         img.partner--item__img.img-fluid(src="img/partner.png")
+            //-                 .partner--item.px-5
+            //-                     a.partner--item__link(href="")
+            //-                         img.partner--item__img.img-fluid(src="img/partner.png")
+            //-                 .partner--item.px-5
+            //-                    a.partner--item__link(href="")
+            //-                         img.partner--item__img.img-fluid(src="img/partner.png")
+            //-                 .partner--item.px-5
+            //-                     a.partner--item__link(href="")
+            //-                         img.partner--item__img.img-fluid(src="img/partner.png")
+            //-                 .partner--item.px-5
+            //-                     a.partner--item__link(href="")
+            //-                         img.partner--item__img.img-fluid(src="img/partner.png")
+            //-                 .partner--item.px-5
+            //-                    a.partner--item__link(href="")
+            //-                         img.partner--item__img.img-fluid(src="img/partner.png")
+            //-                 .partner--item.px-5
+            //-                     a.partner--item__link(href="")
+            //-                         img.partner--item__img.img-fluid(src="img/partner.png")
+            //-         .carousel-item
+            //-             .partner--group
+            //-                 .partner--item.px-5
+            //-                     img.partner--item__img.img-fluid(src="img/partner.png")
+            //-                 .partner--item.px-5
+            //-                     img.partner--item__img.img-fluid(src="img/partner.png")
+            //-                 .partner--item.px-5
+            //-                     img.partner--item__img.img-fluid(src="img/partner.png")
+            //-                 .partner--item.px-5
+            //-                     img.partner--item__img.img-fluid(src="img/partner.png")
+            //-                 .partner--item.px-5
+            //-                     img.partner--item__img.img-fluid(src="img/partner.png")
+            //-                 .partner--item.px-5
+            //-                     img.partner--item__img.img-fluid(src="img/partner.png")
+            //-                 .partner--item.px-5
+            //-                     img.partner--item__img.img-fluid(src="img/partner.png")
+            //-     ol.carousel-indicators.grp--controls
+            //-         li.grp--control.active(data-target='#PartnerGroup', data-slide-to='0')
+            //-         li.grp--control(data-target='#PartnerGroup', data-slide-to='1')
+            //-         li.grp--control(data-target='#PartnerGroup', data-slide-to='2')
             include pug_template/footer.pug
-        script(src='https://code.jquery.com/jquery-3.3.1.min.js', integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=', crossorigin='anonymous')
+        //- script(src='https://code.jquery.com/jquery-3.3.1.min.js', integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=', crossorigin='anonymous')
+        script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
+        script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js')
+        script(type='text/javascript', src='slick/slick.min.js')
         //- script(src='js/jquery.mask.js')
         //- script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js')
         script(src='js/datepicker.min.js')

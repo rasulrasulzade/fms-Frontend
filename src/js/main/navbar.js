@@ -1,20 +1,20 @@
 const navbar = ()=> {
-	let logoWidth =() => {
-		console.log("HELLO");
-	}
+	// let addWidth = () => {
+	// 	document.querySelector(".navbar--logo").classList.add("navLogoSmall");
+	// }
+	// let delWidth = () => {
+	// 	document.querySelector(".navbar--logo").classList.remove("navLogoSmall");
+	// }
 
 	// let searchInput=document.querySelector(".b-search-input");
-	// let inputWidth=$(".b-search-input").attr("width");
-	
-	// searchInput.focus(logoWidth());
+		
+	// searchInput.onfocus=function() {addWidth();}
+	// searchInput.onfocusout=function() {delWidth();}  
+	$(".collapse--box__search").click(function(){
+		$("i.searchIcon").toggleClass("iconNone");
+		$("i.timesIcon").toggleClass("iconBlock");
 
-	// if (inputWidth=="100px") {
-	// 	console.log("it is working!!!");
-	// }
-	
-
-	
-	
-
+		$(".searchBox").slideToggle("fast");
+	});
 }
 export default navbar
