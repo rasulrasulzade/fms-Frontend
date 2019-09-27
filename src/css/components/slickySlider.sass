@@ -31,6 +31,7 @@ html, body
 .slick-dots li
   list-style-type: none
   button
+    display: none!important
     width: 1.7rem !important
     height: 1.7rem !important
     border-radius: 100%
@@ -40,6 +41,8 @@ html, body
     color: transparent !important
 li.slick-active button
   background-color: $button--color !important
+.slick-dots li button::before
+  content: ""!important
 .slider-area
   margin-top: 10.7rem
   margin-bottom: 16.3rem!important
@@ -53,7 +56,8 @@ ul.slick-dots
   border: 0
   background-color: white
   outline: 0 !important
-  font-size: 25px
+  font-size: 18px
+  // font-weight: thin!important
   color: $main--color
 .prev-arrow
   left: -40px
@@ -66,3 +70,13 @@ ul.slick-dots
   height: 100%
 .slick-track
   height: 100%
+@media (max-width: 590px)
+  .prev-arrow
+    left: -10px
+  .next-arrow
+    right: -10px
+@media (max-width: 480px)
+  .reponsiveImg
+    max-width: 92px
+    margin-right: auto
+    margin-left: auto 

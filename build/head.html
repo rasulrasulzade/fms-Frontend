@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1569402396117">
+    <link rel="stylesheet" type="text/css" href="./css/main/main.min.css?v=1569589565288">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -24,16 +24,14 @@
   </head>
   <body>
     <div class="container-fluid main">
-      <div class="container">
+      <div class="container navContainer">
         <nav class="navbar navbar-expand-lg navbarr"><a class="navbar-brand navbar--logo" href="#"><img class="img-fluid" src="img/fmsLogo.png"></a>
           <button class="navbar-toggler nav_icon_color" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><img class="burgerIcon" src="img/burgerIcon.png"></button>
           <div class="collapse navbar-collapse collapse--box" id="navbarTogglerDemo02">
             <div class="searchBox">
               <form class="searchForm" action="" method="get">
-                <div class="input-group">
-                  <input class="form-control searchInput" type="text">
-                  <buttton class="btn-default searchBtn" type="submit">Axtar</buttton>
-                </div>
+                <input class="searchInput" id="search">
+                <button class="searchBtn"><i class="fa fa-search"></i></button>
               </form>
             </div>
             <ul class="navbar-nav mt-lg-0 ul--box">
@@ -97,7 +95,7 @@
         </div>
       </div>
       <div class="container content--container">
-        <p class="content--header">Peşəkarlar niyə bizi seçir? </p>
+        <p class="content--header whyUs">Peşəkarlar niyə bizi seçir? </p>
         <div class="row">
           <div class="col-md-4 py-5 px-4 content--type"><img class="pb-4 content--type--img" src="img/gps-navigator.png">
             <p class="content--type--name">Nəqliyyat Vasitəsinin İzlənməsi</p>
@@ -151,81 +149,80 @@
           </div>
         </div>
         <p class="content--header equipment--header">Avadanlıqlar</p>
-        <div class="row flex--content--row">
-          <div class="py-5 px-4 content--type second--content--type"><img class="pb-4 content--type--img second--content--type--img" src="img/equipment.png">
-            <p class="content--type--name second--content--type--name">RUPTELA FM-ECO4</p>
-            <p class="content--type--text">FM-Pro4 – yük maşınları, kənd təsərrüfatı maşınları, inşaat texnikası və digər ağır yük nəqliyyat vasitələrində istifadə üçün nəzərdə tutulmuş müasir GPS-treker</p><a class="second--content--type__link" href=""><img class="second--content--type__direction--img" src="img/direction.png"></a>
-          </div>
-          <div class="py-5 px-4 content--type second--content--type"><img class="pb-4 content--type--img second--content--type--img" src="img/equipment.png">
-            <p class="content--type--name second--content--type--name">RUPTELA FM-ECO4</p>
-            <p class="content--type--text">FM-Pro4 – yük maşınları, kənd təsərrüfatı maşınları, inşaat texnikası və digər ağır yük nəqliyyat vasitələrində istifadə üçün nəzərdə tutulmuş müasir GPS-treker</p><a class="second--content--type__link" href=""><img class="second--content--type__direction--img" src="img/direction.png"></a>
-          </div>
-          <div class="py-5 px-4 content--type second--content--type"><img class="pb-4 content--type--img second--content--type--img" src="img/equipment.png">
-            <p class="content--type--name second--content--type--name">RUPTELA FM-ECO4</p>
-            <p class="content--type--text">FM-Pro4 – yük maşınları, kənd təsərrüfatı maşınları, inşaat texnikası və digər ağır yük nəqliyyat vasitələrində istifadə üçün nəzərdə tutulmuş müasir GPS-treker</p><a class="second--content--type__link" href=""><img class="second--content--type__direction--img" src="img/direction.png"></a>
-          </div>
-        </div>
+        <div class="row flex--content--row"><a class="second--content--type__link" href="">
+            <div class="py-5 px-4 content--type second--content--type"><img class="pb-4 content--type--img second--content--type--img" src="img/equipment.png">
+              <p class="content--type--name second--content--type--name">RUPTELA FM-ECO4</p>
+              <p class="content--type--text news-text">FM-Pro4 – yük maşınları, kənd təsərrüfatı maşınları, inşaat texnikası və digər ağır yük nəqliyyat vasitələrində istifadə üçün nəzərdə tutulmuş müasir GPS-treker</p>
+              <div class="second-direction"></div>
+            </div></a><a class="second--content--type__link" href="">
+            <div class="py-5 px-4 content--type second--content--type"><img class="pb-4 content--type--img second--content--type--img" src="img/equipment.png">
+              <p class="content--type--name second--content--type--name">RUPTELA FM-ECO4</p>
+              <p class="content--type--text news-text">FM-Pro4 – yük maşınları, kənd təsərrüfatı maşınları, inşaat texnikası və digər ağır yük nəqliyyat vasitələrində istifadə üçün nəzərdə tutulmuş müasir GPS-treker</p>
+              <div class="second-direction"></div>
+            </div></a><a class="second--content--type__link" href="">
+            <div class="py-5 px-4 content--type second--content--type"><img class="pb-4 content--type--img second--content--type--img" src="img/equipment.png">
+              <p class="content--type--name second--content--type--name">RUPTELA FM-ECO4</p>
+              <p class="content--type--text news-text">FM-Pro4 – yük maşınları, kənd təsərrüfatı maşınları, inşaat texnikası və digər ağır yük nəqliyyat vasitələrində istifadə üçün nəzərdə tutulmuş müasir GPS-treker</p>
+              <div class="second-direction"></div>
+            </div></a></div>
         <div class="row mt-5"><a class="mx-auto information--button" href="">Daha çox</a></div>
         <p class="content--header news--header">Xəbərlər</p>
         <div class="row flex--content--row">
-          <div class="content--type px-0 news--content--type"><img class="pb-4 content--type--img news--content--type__img" src="img/news.png">
-            <div class="mx-5 time">
-              <div class="orange--point"> </div>
-              <div class="news--date">Yanvar 8, 2018</div>
-            </div>
-            <p class="mx-5 content--type--name">Nəqliyyat Vasitəsinin İzlənməsi</p>
-            <p class="mx-5 content--type--text">Sürət həddinin aşılması, temperatur rejiminin  dəyişilməsi, yanacağın boşaldılması,  yükün icazə</p>
-            <div class="mx-5 mt-5 news--link--box"><a class="news--link" href="">Ətraflı oxu</a></div>
-          </div>
-          <div class="content--type px-0 news--content--type"><img class="pb-4 content--type--img news--content--type__img" src="img/news.png">
-            <div class="mx-5 time">
-              <div class="orange--point"> </div>
-              <div class="news--date">Yanvar 8, 2018</div>
-            </div>
-            <p class="mx-5 content--type--name">Nəqliyyat Vasitəsinin İzlənməsi</p>
-            <p class="mx-5 content--type--text">Sürət həddinin aşılması, temperatur rejiminin  dəyişilməsi, yanacağın boşaldılması,  yükün icazə</p>
-            <div class="mx-5 mt-5 news--link--box"><a class="news--link" href="">Ətraflı oxu</a></div>
-          </div>
-          <div class="content--type px-0 news--content--type"><img class="pb-4 content--type--img news--content--type__img" src="img/news.png">
-            <div class="mx-5 time">
-              <div class="orange--point"> </div>
-              <div class="news--date">Yanvar 8, 2018</div>
-            </div>
-            <p class="mx-5 content--type--name">Nəqliyyat Vasitəsinin İzlənməsi</p>
-            <p class="mx-5 content--type--text">Sürət həddinin aşılması, temperatur rejiminin  dəyişilməsi, yanacağın boşaldılması,  yükün icazə</p>
-            <div class="mx-5 mt-5 news--link--box"><a class="news--link" href="">Ətraflı oxu</a></div>
-          </div>
+          <div class="content--type px-0 news--content--type"><a class="news--link" href=""><img class="pb-4 content--type--img news--content--type__img" src="img/news.png">
+              <div class="mx-5 time">
+                <div class="orange--point"> </div>
+                <div class="news--date">Yanvar 8, 2018</div>
+              </div>
+              <p class="mx-5 content--type--name">Nəqliyyat Vasitəsinin İzlənməsi</p>
+              <p class="mx-5 content--type--text">Sürət həddinin aşılması, temperatur rejiminin  dəyişilməsi, yanacağın boşaldılması,  yükün icazə</p>
+              <div class="mx-5 mt-5 news--link--box">Ətraflı oxu</div></a></div>
+          <div class="content--type px-0 news--content--type"><a class="news--link" href=""><img class="pb-4 content--type--img news--content--type__img" src="img/news.png">
+              <div class="mx-5 time">
+                <div class="orange--point"> </div>
+                <div class="news--date">Yanvar 8, 2018</div>
+              </div>
+              <p class="mx-5 content--type--name">Nəqliyyat Vasitəsinin İzlənməsi</p>
+              <p class="mx-5 content--type--text">Sürət həddinin aşılması, temperatur rejiminin  dəyişilməsi, yanacağın boşaldılması,  yükün icazə</p>
+              <div class="mx-5 mt-5 news--link--box">Ətraflı oxu</div></a></div>
+          <div class="content--type px-0 news--content--type"><a class="news--link" href=""><img class="pb-4 content--type--img news--content--type__img" src="img/news.png">
+              <div class="mx-5 time">
+                <div class="orange--point"> </div>
+                <div class="news--date">Yanvar 8, 2018</div>
+              </div>
+              <p class="mx-5 content--type--name">Nəqliyyat Vasitəsinin İzlənməsi</p>
+              <p class="mx-5 content--type--text">Sürət həddinin aşılması, temperatur rejiminin  dəyişilməsi, yanacağın boşaldılması,  yükün icazə</p>
+              <div class="mx-5 mt-5 news--link--box">Ətraflı oxu</div></a></div>
         </div>
         <div class="row mt-5"><a class="mx-auto information--button" href="">Daha çox</a></div>
         <p class="content--header partners">Partnyorlar</p>
         <div class="slider slider-area">
-          <div><img class="reponsiveImg" src="img/partner.png"></div>
-          <div><img class="reponsiveImg" src="img/partner.png"></div>
-          <div><img class="reponsiveImg" src="img/partner.png"></div>
-          <div><img class="reponsiveImg" src="img/partner.png"></div>
-          <div><img class="reponsiveImg" src="img/partner.png"></div>
-          <div><img class="reponsiveImg" src="img/partner.png"></div>
-          <div><img class="reponsiveImg" src="img/partner.png"></div>
-          <div><img class="reponsiveImg" src="img/partner.png"></div>
-          <div><img class="reponsiveImg" src="img/partner.png"></div>
-          <div><img class="reponsiveImg" src="img/partner.png"></div>
-          <di><img class="reponsiveImg" src="img/partner.png"></di>
-          <div><img class="reponsiveImg" src="img/partner.png"></div>
-          <div><img class="reponsiveImg" src="img/partner.png"></div>
-          <div><img class="reponsiveImg" src="img/partner.png"></div>
-          <div><img class="reponsiveImg" src="img/partner.png"></div>
-          <div><img class="reponsiveImg" src="img/partner.png"></div>
-          <div><img class="reponsiveImg" src="img/partner.png"></div>
-          <div><img class="reponsiveImg" src="img/partner.png"></div>
-          <div><img class="reponsiveImg" src="img/partner.png"></div>
-          <div><img class="reponsiveImg" src="img/partner.png"></div>
-          <div><img class="reponsiveImg" src="img/partner.png"></div>
+          <div><a><img class="reponsiveImg" src="img/partner.png"></a></div>
+          <div><a><img class="reponsiveImg" src="img/partner.png"></a></div>
+          <div><a><img class="reponsiveImg" src="img/partner.png"></a></div>
+          <div><a><img class="reponsiveImg" src="img/partner.png"></a></div>
+          <div><a><img class="reponsiveImg" src="img/partner.png"></a></div>
+          <div><a><img class="reponsiveImg" src="img/partner.png"></a></div>
+          <div><a><img class="reponsiveImg" src="img/partner.png"></a></div>
+          <div><a><img class="reponsiveImg" src="img/partner.png"></a></div>
+          <div><a><img class="reponsiveImg" src="img/partner.png"></a></div>
+          <div><a><img class="reponsiveImg" src="img/partner.png"></a></div>
+          <div><a><img class="reponsiveImg" src="img/partner.png"></a></div>
+          <div><a><img class="reponsiveImg" src="img/partner.png"></a></div>
+          <div><a><img class="reponsiveImg" src="img/partner.png"></a></div>
+          <div><a><img class="reponsiveImg" src="img/partner.png"></a></div>
+          <div><a><img class="reponsiveImg" src="img/partner.png"></a></div>
+          <div><a><img class="reponsiveImg" src="img/partner.png"></a></div>
+          <div><a><img class="reponsiveImg" src="img/partner.png"></a></div>
+          <div><a><img class="reponsiveImg" src="img/partner.png"></a></div>
+          <div><a><img class="reponsiveImg" src="img/partner.png"></a></div>
+          <div><a><img class="reponsiveImg" src="img/partner.png"></a></div>
+          <div><a><img class="reponsiveImg" src="img/partner.png"></a></div>
         </div>
       </div>
-      <footer class="page--footer">
-        <div class="page--footer__biggestDiv">
+      <footer class="page-footer">
+        <div class="container">
           <div class="row mx-0 footer--inner">
-            <div class="col-md-3 px-0"><img class="footer--inner__logo img-fluid" src="img/whiteLogo.png"></div>
+            <div class="col-md-3 px-0 footerLogo"><img class="footer--inner__logo img-fluid" src="img/whiteLogo.png"></div>
             <div class="col-md-9 px-0">
               <div class="row mx-0 footer--contents">
                 <div class="footer--content footer--content__first"><a class="footer--link" href="">Haqqımızda</a><a class="footer--link" href="">Xidmətlərimiz</a><a class="footer--link" href="">Müştərilərə</a><a class="footer--link" href="">Avadanlıqlar</a></div>
@@ -233,7 +230,7 @@
                 <div class="footer--content footer--content__contact"><a class="footer--link" href="">Əlaqə</a><a class="contact__number" href="tel:+994  70 983 46 54"><img class="contactIcon" src="img/phone-call.png">+994  70 983 46 54</a>
                   <div class="contact__email"><img class="contactIcon" src="img/mail.png"><a href="mailto:info@fms.az">info@fms.az</a>/<a href="mailto:sales@fms.az">sales@fms.az</a></div><a class="contact__address" href=""><img class="contactIcon" src="img/path.png">Şəfayət Mehdiyev küç. 133A Yasamal / Bakı</a>
                 </div>
-                <div class="footer--content__social--accounts"><a class="social--accounts__link instagram--link" href=""><img class="instagram" src="img/instagram.png"></a><a class="social--accounts__link" href=""><img class="facebook" src="img/facebook.png"></a></div>
+                <div class="footer--content__social--accounts"><a class="social--accounts__link instagram-link" href=""><img class="instagram" src="img/instagram.png"></a><a class="social--accounts__link fb-link" href=""><img class="facebook" src="img/facebook.png"></a></div>
               </div>
             </div>
           </div>
@@ -250,6 +247,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-    <script src="js/all.js?v=1569402396117"></script>
+    <script src="js/all.js?v=1569589565288"></script>
   </body>
 </html>

@@ -35,13 +35,14 @@ a
 	.carousel--item__content--text 
 		font-size: 20px
 		font-weight: 300
+		margin-bottom: 0 
 	.carousel--item__content--motto
 		font-size: 50px
 		font-weight: 500
 		margin-bottom: 0 
 	.carousel--item__content--button
 		font-size: 14px
-		margin-top: 3.78em
+		margin-top: 5.3rem
 		border: none
 		font-weight: 300
 		padding: 0.42em 2.57em
@@ -54,12 +55,11 @@ a
 			color: white
 			transition-duration: 400ms
 .content--container
-	// width: 70%!important
 	color: $main--color
 .content--header
 	font: 500 32px $main--font
-	margin-top: 8%
-	margin-bottom: 4%
+	margin-top: 9.6rem
+	margin-bottom: 7.9rem
 	display: flex
 	justify-content: center
 	color: $main--color
@@ -70,41 +70,63 @@ a
 	color: $main--color
 	.content--type--name
 		font-weight: 500
+		color: $main--color
 	.content--type--text
 		font-weight: 300
+		color: $main--color
 .equipment--header
 	margin-bottom: 16%
 .flex--content--row
 	display: flex
 	justify-content: space-between
+.second--content--type__link
+	width: 30%
 .second--content--type
 	position: relative
-	width: 30%
+	border: solid 0.2px $news--border--color!important
+	border-radius: 4px
 	.second--content--type--img
 		position: absolute
 		top: -75px
 		left: 0
 		right: 0
 		margin-left: auto
-		margin-right: auto
+		margin-right: auto	
 	.second--content--type--name
 		padding-top: 20%
-	.second--content--type__direction--img
-		opacity: 0
+	.news-text
+		margin-bottom: 4.2rem
+		padding: 0 4.6rem
+	.second-direction
+		width: 36px
+		height: 36px
+		background: url("../../img/r-arrow-gray.svg") no-repeat center
 		position: absolute
 		bottom: -18px
 		left: 0
 		right: 0
 		margin-left: auto
 		margin-right: auto
+		border: solid 0.2px $news--border--color	
+		border-radius: 50%
+		font-size: 12px
+		transition: 300ms all
 	&:hover
-		box-shadow: 4px 4px 20px $shadow--color
-		.second--content--type__direction--img
-			opacity: 1
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0   6px 6px rgba($shadow--color,0.23)
+		transform: translateY(-5px)
+		.second-direction
+			background: url("../../img/r-arrow-white.svg") no-repeat center
+			background-color: $button--color
+			border-color: $button--color
+			img 
+				fill: green!important
+.second-direction img path
+	fill: $news--border--color!important
 .information--form
 	display: flex
 	justify-content: center
 .information--button
+	margin-top: 4.8rem
 	cursor: pointer
 	// margin: 8% auto 4% auto
 	border: solid 1px $button--color
@@ -124,9 +146,11 @@ a
 	text-align: left
 	border-radius: 7%
 	border: solid 0.25px $news--border--color
+	transition: .4s all
 	&:hover
 		border: none
 		box-shadow: 4px 4px 20px $shadow--color
+		transform: scale(1.15)	
 	.news--content--type__img
 		width: 100%
 .orange--point
@@ -141,17 +165,19 @@ a
 .time 
 	font-size: 14px
 	margin-bottom: 6px
+	color: $main--color
 .news--link--box
 	position: relative
 	cursor: pointer
 	margin-bottom: 4.2rem
-	.news--link
-		font-family: Roboto
-		font-size: 14px
-		font-weight: 300
-		color: $news--border--color
-		&:hover
-			border-bottom: solid 1px
+	color: $main--color
+	font-family: Roboto
+	font-size: 14px
+	font-weight: 300
+	color: $news--border--color
+	width: 72px
+	&:hover
+		border-bottom: solid 1px
 .carousel--shadow
 	box-shadow: 3px 3px 15px $shadow--color
 .partner--group
@@ -178,33 +204,41 @@ a
 		font-size: 6px
 	.equipment--header
 		margin-bottom: 0
-	.second--content--type
+	.second--content--type__link
 		width: 100%
+	.second--content--type
+		// width: 100%
 		margin-top: 30%
 	.news--header
 		margin-bottom: 0
+	.flex--content--row
+		justify-content: center
 	.news--content--type
-		width: 100%
+		width: 95%
 		margin-top: 20%
 @media (max-width: 590px)
 	html 
 		font-size: 6px
 	.carousel--indicators
-		margin-bottom: 0!important
+		margin-bottom: -8px!important
 	.carousel--item__content--button
-		margin-top: 4px!important
-		font-size: 7px!important
+		margin-top: 2px!important
+		font-size: 16px!important
 	.second--content--type
 		margin-top: 40%
 @media (max-width: 490px)
 	.carousel--item__content 
 		.carousel--item__content--text 
-			font-size: 14px
+			font-size: 18px
 		.carousel--item__content--motto
-			font-size: 35px
+			font-size: 38px
 	.carousel--item__content--button
-		margin-top: 2px!important
-		font-size: 7px!important
+		margin-top: -2px!important
+		font-size: 16px!important
+		padding: 0.4px 1em!important
+@media (max-width: 401px)
+	.whyUs
+		margin-bottom: 4rem 
 @media (max-width: 390px)
 	.carousel--item__content 
 		// .carousel--item__content--text 
@@ -213,9 +247,8 @@ a
 		font-size: 4px
 	.carousel--item__content 
 		.carousel--item__content--text 
-			font-size: 8.8
+			font-size: 14px
 		.carousel--item__content--motto
-			font-size: 22px
+			font-size: 27px
 	.second--content
 		margin-top: 43%
-@import slickySlider

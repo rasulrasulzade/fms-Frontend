@@ -2,7 +2,9 @@
   padding: 0!important
   font: 400 14px $main--font
   text-decoration: none
-  // background-color: maroon
+  // background-color: white
+  // position: fixed!important
+  // z-index: 900
 .navbar--logo
   // display: flex!important
   // justify-content: center
@@ -34,22 +36,8 @@
   margin-right: 2rem
 .collapseBox__form
   width: 13px
-.b-search-input
-  width: 100%
-  max-width: 0
-  // width: 100px
-  opacity: 0
-  transition: .5s all
-  // border: solid 0.6px $main--color
-  padding: 0
-  border-radius: 10px
-.b-search-input:focus
-  max-width: 90px
-  opacity: 1
-  border-color: white
-  margin-right: 2px
-  border: solid 0.6px $main--color
-  outline: 0
+  i
+    cursor: pointer
 .option-form
   outline: 0
 .option-group
@@ -63,17 +51,7 @@
   color: $main--color
   &:hover
     color: $second--color
-// @media (min-width: 1200px)
-//   .navbar--logo
-//     width: 28%!important
-// @media (max-width: 1180px)
-//   .navbar--logo
-//     width: 25%
-// @media (max-width: 1041px)
-//   .navbar--logo
-//     width: 15%
 .timesIcon
-  // display: none
   display: none!important
 .iconBlock
   display: block!important
@@ -81,38 +59,42 @@
   display: none!important
 .searchBox
   display: none
-  position: fixed
-  // background: blue
+  position: absolute
   top: 50px
   left: 0
   right: 0
-  // margin-left: auto!important
-  // margin-right: auto!important
-  z-index: 1001
-  width: 100%
-  max-width: 100%
-  // padding: 10px
-.searchForm 
-  width: 80%
-  margin-left: auto
-  margin-right: auto
+  margin-left: 60rem
+  z-index: 800
+  width: 400px
+  // background-color: green
+.searchForm
+  display: flex
+  justify-content: center
 .searchInput
   outline: 0
   border: 0
-  font: 400 14px $main--font!important
-.searchBtn
-  text-align: center
-  padding: 0.5rem 1.2rem 
-  border-radius: 5px
   font: 400 14px $main--font
-  background-color: $second--color
+  border-radius: 20px 0 0 20px
+  padding: 5px 5px 5px 12px
+  width: 88%
+  // z-index: 0!important
+  height: 100%
+.searchBtn
+  outline: 0
+  border: 0
+  font: 400 14px $main--font
+  border-radius: 0 20px 20px 0
+  margin-left: -3px
+  padding: 5px 
+  width: 12%
+  // height: 100%
+  // background-color: teal
+  background-color: white
 @media (max-width: 1200px)
   html
     font-size: 8px!important
   .navbar--logo
     font-size: 2px!important
-  // .navbar--logo
-  //   margin-right: 10.86rem!important
 @media (max-width: 991px)
   .ul--box
     display: block
@@ -122,13 +104,18 @@
   .searchBox
     position: relative
     display: block!important
-    width: 100%
+    width: 100%!important
+    margin: 0
     top: 0
     padding: 0 2rem
-    // margin-left: 2rem
-    // margin-right: 2rem
-  .searchForm 
-    width: 100%
+    .searchInput
+      border-top: solid 1px $main--color
+      border-bottom: solid 1px $main--color
+      border-left: solid 1px $main--color
+    .searchBtn
+      border-top: solid 1px $main--color
+      border-bottom: solid 1px $main--color
+      border-right: solid 1px $main--color
   .collapse--box__search
     margin-left: 2rem
     margin-bottom: 0.5rem

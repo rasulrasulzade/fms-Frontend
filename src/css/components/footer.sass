@@ -1,4 +1,4 @@
-.page--footer
+.page-footer
 	background-color: $second--color
 	display: flex
 	justify-content: center
@@ -6,8 +6,8 @@
 .page--footer__biggestDiv
 	width: 76.57%
 .footer--inner__logo
-	font-size: 10px
-	margin-left: 1em
+	// font-size: 10px
+	// margin-left: 1em
 .footer--inner
 	margin-top: 6rem
 	a
@@ -36,19 +36,28 @@
 	&:hover
 		opacity: 0.5
 .footer--content__first
+	// background-color: green
 	width: 19.58%
 .footer--content__second
 	width: 27.88%
+	// background-color: red
 .footer--content__contact
 	width: 41.89%
+	// background-color: orange
+// .footer--content__social--accounts
+// 	background-color: olive
 .contactIcon
 	margin-right: 6px
 .social--accounts__link
+	font-size: 10px
 	&:hover
 		opacity: 0.5
-.instagram--link
-	font-size: 10px
-	margin-right: 1.6em
+.instagram-link
+	// font-size: 10px
+	padding-right: 0.8em
+.fb-link
+	// font-size: 10px
+	padding-left: 0.8em
 .copyright--line
 	margin-top: 9.3rem
 	padding-top: 1.3rem
@@ -58,18 +67,26 @@
 	.copyright--line__text
 		margin-bottom: 4.6rem
 @media (max-width: 1050px)
-	.page--footer__biggestDiv
-		width: 90%
+	// .page--footer__biggestDiv
+	// 	width: 90%
+	.footer--content__social--accounts
+		margin-right: -9px
 @media (max-width: 900px)
-	.page--footer__biggestDiv
-		width: 95%
+	// .page--footer__biggestDiv
+	// 	width: 95%
 	.footer--inner__logo
 		font-size: 6px
-	.instagram--link
+	.social--accounts__link
 		font-size: 6px
+	// .instagram-link
+	// 	font-size: 6px
+	// .fb-link
+	// 	font-size: 6px
 @media (max-width: 767px)
-	.page--footer__biggestDiv
-		width: 76.57%
+	// .page--footer__biggestDiv
+	// 	width: 76.57%
+	.footerLogo
+		margin-bottom: 13px
 	.footer--content__first
 		width: 100%
 	.footer--content__second

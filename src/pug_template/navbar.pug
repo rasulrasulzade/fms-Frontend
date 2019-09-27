@@ -1,4 +1,4 @@
-.container
+.container.navContainer
   nav.navbar.navbar-expand-lg.navbarr
     a.navbar-brand(href='#').navbar--logo
       img.img-fluid(src="img/fmsLogo.png")
@@ -10,11 +10,26 @@
       //-   img.icon_img(src="img/white-menu-icon-png-18.jpg")
     #navbarTogglerDemo02.collapse.navbar-collapse.collapse--box
       .searchBox
-        form.searchForm(action="", method="get")
-          .input-group
-            input.form-control.searchInput(type="text")
-            buttton.btn-default.searchBtn(type="submit")
-              | Axtar
+        //- .input-group
+        //-   input.form-control.searchInput(type="text").rounded-pill
+        //-   span.input-group-append
+        //-     buttton.searchBtn(type="submit").btn.rounded-pill
+        //-       i.fa.fa-search
+        form(action='', method='get').searchForm
+          input#search.searchInput
+          button.searchBtn
+            i.fa.fa-search
+        //- .row.no-gutters.align-items-center.searchBox__row
+        //-   .col-4
+        //-     input#example-search-input2.form-control.border-secondary.rounded-pill.pr-5.searchInput(type='search').
+        //-   .col-auto
+        //-     button.btn.btn-outline-light.text-dark.border-0.rounded-pill.ml-n5.searchBtn(type='button')
+        //-       i.fa.fa-search
+        //- .input-group
+        //-   input.form-control.py-2.rounded-pill.mr-1.pr-5.searchInput(type='search')
+        //-   span.input-group-append
+        //-     button.btn.rounded-pill.border-0.ml-n5.searchBtn(type='button')
+        //-       i.fa.fa-search
       ul.navbar-nav.mt-lg-0.ul--box
         li.nav-item
           a.nav-link.navbar__link(href='') Haqqımızda 
@@ -34,7 +49,6 @@
           a.nav-link.navbar__link(href='') Əlaqə
       .collapse--box__search
         form.collapseBox__form(action="", method="get")
-          //- input#search.b-search-input
           label(for="search")
             i.fa.fa-search.searchIcon
             i.fa.fa-times.timesIcon
