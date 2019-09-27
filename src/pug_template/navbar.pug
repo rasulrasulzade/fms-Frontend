@@ -1,58 +1,38 @@
 .container.navContainer
-  nav.navbar.navbar-expand-lg.navbarr
-    a.navbar-brand(href='#').navbar--logo
+  nav.navbar.navbar-expand-lg.myNav
+    a.navbar-brand(href='#').navbar-logo
       img.img-fluid(src="img/fmsLogo.png")
-    button.navbar-toggler.nav_icon_color(type='button' data-toggle='collapse' data-target='#navbarTogglerDemo02' aria-controls='navbarTogglerDemo02' aria-expanded='false' aria-label='Toggle navigation')
-      //- span.navbar-toggler-icon.navigation_toggler_icon
-      //- i.fas.fa-bars
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarTogglerDemo02' aria-controls='navbarTogglerDemo02' aria-expanded='false' aria-label='Toggle navigation')
       img.burgerIcon(src="img/burgerIcon.png")
-      //- .div_for_icon_img
-      //-   img.icon_img(src="img/white-menu-icon-png-18.jpg")
-    #navbarTogglerDemo02.collapse.navbar-collapse.collapse--box
+    #navbarTogglerDemo02.collapse.navbar-collapse.collapse-box
       .searchBox
-        //- .input-group
-        //-   input.form-control.searchInput(type="text").rounded-pill
-        //-   span.input-group-append
-        //-     buttton.searchBtn(type="submit").btn.rounded-pill
-        //-       i.fa.fa-search
         form(action='', method='get').searchForm
           input#search.searchInput
           button.searchBtn
             i.fa.fa-search
-        //- .row.no-gutters.align-items-center.searchBox__row
-        //-   .col-4
-        //-     input#example-search-input2.form-control.border-secondary.rounded-pill.pr-5.searchInput(type='search').
-        //-   .col-auto
-        //-     button.btn.btn-outline-light.text-dark.border-0.rounded-pill.ml-n5.searchBtn(type='button')
-        //-       i.fa.fa-search
-        //- .input-group
-        //-   input.form-control.py-2.rounded-pill.mr-1.pr-5.searchInput(type='search')
-        //-   span.input-group-append
-        //-     button.btn.rounded-pill.border-0.ml-n5.searchBtn(type='button')
-        //-       i.fa.fa-search
-      ul.navbar-nav.mt-lg-0.ul--box
+      ul.navbar-nav.mt-lg-0.ul-box
         li.nav-item
-          a.nav-link.navbar__link(href='') Haqqımızda 
+          a.nav-link.navbarLink(href='') Haqqımızda 
         li.nav-item
-          a.nav-link.navbar__link(href='') Xidmətlərimiz
+          a.nav-link.navbarLink(href='') Xidmətlərimiz
         li.nav-item
-          a.nav-link.navbar__link(href='') Wialon
+          a.nav-link.navbarLink(href='') Wialon
         li.nav-item
-          a.nav-link.navbar__link(href='') Avadanlıqlar
+          a.nav-link.navbarLink(href='') Avadanlıqlar
         li.nav-item
-          a.nav-link.navbar__link(href='') Müştərilərə
+          a.nav-link.navbarLink(href='') Müştərilərə
         li.nav-item
-          a.nav-link.navbar__link(href='') Korporativ Əməkdaşlıq
+          a.nav-link.navbarLink(href='') Korporativ Əməkdaşlıq
         li.nav-item
-          a.nav-link.navbar__link(href='') Xəbərlər
+          a.nav-link.navbarLink(href='') Xəbərlər
         li.nav-item
-          a.nav-link.navbar__link(href='') Əlaqə
-      .collapse--box__search
-        form.collapseBox__form(action="", method="get")
+          a.nav-link.navbarLink(href='') Əlaqə
+      .collapse-box__search
+        form.collapse-box__form(action="", method="get")
           label(for="search")
             i.fa.fa-search.searchIcon
             i.fa.fa-times.timesIcon
-      .collapse--box__language
+      .collapse-box__language
         form.option-form
           select.option-group
             option.option(value="") AZ

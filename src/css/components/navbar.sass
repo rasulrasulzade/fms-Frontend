@@ -1,40 +1,26 @@
-.navbarr
+.myNav
   padding: 0!important
-  font: 400 14px $main--font
+  font: 400 14px $main-font
   text-decoration: none
-  // background-color: white
-  // position: fixed!important
-  // z-index: 900
-.navbar--logo
-  // display: flex!important
-  // justify-content: center
+.navbar-logo
   font-size: 10px!important
   margin-right: 16.86em!important
-  // width: 28%
-  // background-color: olive
-.collapse--box 
-  // background-color: orange
-.ul--box
-  // background-color: aqua
-.navLogoSmall
-  width: 15%!important
-  transition: .5s all
 .burgerIcon
   width: 25px
-.ul--box
+.ul-box
   float: right
-.navbar__link
+.navbarLink
   min-width: 100%
-  color: $main--color
-  font: 400 14px $main--font
+  color: $main-color
+  font: 400 14px $main-font
   padding-left: 0!important
   padding-right: 1.7rem!important
   &:hover
-    color: $second--color
+    color: $second-color
     opacity: 0.6
-.collapse--box__search
+.collapse-box__search
   margin-right: 2rem
-.collapseBox__form
+.collapse-box__form
   width: 13px
   i
     cursor: pointer
@@ -48,9 +34,9 @@
   cursor: pointer
   outline: 0
   border: 0
-  color: $main--color
+  color: $main-color
   &:hover
-    color: $second--color
+    color: $second-color
 .timesIcon
   display: none!important
 .iconBlock
@@ -66,37 +52,33 @@
   margin-left: 60rem
   z-index: 800
   width: 400px
-  // background-color: green
 .searchForm
   display: flex
   justify-content: center
 .searchInput
   outline: 0
   border: 0
-  font: 400 14px $main--font
+  font: 400 14px $main-font
   border-radius: 20px 0 0 20px
   padding: 5px 5px 5px 12px
   width: 88%
-  // z-index: 0!important
   height: 100%
 .searchBtn
   outline: 0
   border: 0
-  font: 400 14px $main--font
+  font: 400 14px $main-font
   border-radius: 0 20px 20px 0
   margin-left: -3px
   padding: 5px 
   width: 12%
-  // height: 100%
-  // background-color: teal
   background-color: white
 @media (max-width: 1200px)
   html
     font-size: 8px!important
-  .navbar--logo
+  .navbar-logo
     font-size: 2px!important
 @media (max-width: 991px)
-  .ul--box
+  .ul-box
     display: block
     float: left
     margin-left: 2rem
@@ -109,23 +91,23 @@
     top: 0
     padding: 0 2rem
     .searchInput
-      border-top: solid 1px $main--color
-      border-bottom: solid 1px $main--color
-      border-left: solid 1px $main--color
+      border-top: solid 1px $main-color
+      border-bottom: solid 1px $main-color
+      border-left: solid 1px $main-color
     .searchBtn
-      border-top: solid 1px $main--color
-      border-bottom: solid 1px $main--color
-      border-right: solid 1px $main--color
-  .collapse--box__search
+      border-top: solid 1px $main-color
+      border-bottom: solid 1px $main-color
+      border-right: solid 1px $main-color
+  .collapse-box__search
     margin-left: 2rem
     margin-bottom: 0.5rem
-  .collapse--box__language
+  .collapse-box__language
     margin-left: 2rem
-  .collapse--box__search
+  .collapse-box__search
     display: none
     width: 142px
     margin-right: 0 
-  .collapse--box__language
+  .collapse-box__language
     width: 142px
     margin-top: 1rem
     margin-bottom: 1rem
