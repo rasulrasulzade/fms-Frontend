@@ -18,12 +18,11 @@ html, body
 .slick-prev:before, .slick-next:before
   color: black
 
-.slick-slide
-  transition: all ease-in-out .3s
-  opacity: .53
-
 .slick-active
-  opacity: .5
+  filter: grayscale(100%)
+  transition: 0.4s
+  &:hover
+     filter: none
 
 .slick-current
   opacity: 1

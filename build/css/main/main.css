@@ -525,7 +525,7 @@ a {
   width: 41.89%; }
 
 .contactIcon {
-  margin-right: 6px; }
+  margin-right: 7px; }
 
 .social-accounts__link {
   font-size: 10px; }
@@ -588,15 +588,16 @@ html, body {
 .slick-prev:before, .slick-next:before {
   color: black; }
 
-.slick-slide {
-  -webkit-transition: all ease-in-out .3s;
-  -o-transition: all ease-in-out .3s;
-  -moz-transition: all ease-in-out .3s;
-  transition: all ease-in-out .3s;
-  opacity: .53; }
-
 .slick-active {
-  opacity: .5; }
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s; }
+  .slick-active:hover {
+    -webkit-filter: none;
+            filter: none; }
 
 .slick-current {
   opacity: 1; }
