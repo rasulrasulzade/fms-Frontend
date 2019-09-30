@@ -23,7 +23,7 @@ const documentListener = (cb=null) => {
 		// if not self clicked
 		if(!_this.closest('.searchBox').length && !_this.closest('.collapse-box__search').length){
 			// closeNav()
-			$(".searchBox").hide();
+			$(".searchBox").fadeOut();
 			$("i.timesIcon").removeClass("iconBlock");
 			$("i.searchIcon").removeClass("iconNone");
 
