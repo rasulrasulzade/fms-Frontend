@@ -3,7 +3,7 @@ $main-color: #445666
 $second-color: #1C85BC
 $shadow-color: #E8F2FF
 $button-color: #F7791C
-$news-border-color: #868BA2
+$third-color: #868BA2
 @import components/navbar
 @import components/homePage
 @import components/footer
@@ -11,5 +11,19 @@ $news-border-color: #868BA2
 @import components/preloader.sass
 @import components/mixin.sass
 @import components/about
+
+// SOME COMMON CLASSSES
+.breadCrumb
+	display: flex 
+	flex-wrap: wrap
+	margin: 2.8rem 0 0 0 
+	background-color: white!important
+	font: 400 14px $main-font
+.breadCrumb-link
+	color: $third-color
+	&:hover
+		color: $button-color
+.breadCrumb--active
+	color: $second-color
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "../../node_modules/progress-tracker/app/styles/progress-tracker.scss"
