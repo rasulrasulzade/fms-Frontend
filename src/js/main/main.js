@@ -1,8 +1,11 @@
 'use strict'
 import navbar from './navbar'
+import servicFunc from './services'
 $(document).ready(function(){
 
  navbar();
+
+ servicFunc();
 
   $('.slider-area').slick({
       dots: true,

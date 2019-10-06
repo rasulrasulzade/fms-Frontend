@@ -1,8 +1,8 @@
 const navbar = ()=> {
 	
 	$(".collapse-box__search").click(function(){
-		$("i.searchIcon").toggleClass("iconNone");
-		$("i.timesIcon").toggleClass("iconBlock");
+		$("i.searchIcon").toggleClass("None");
+		$("i.timesIcon").toggleClass("Block");
 
 		$(".searchBox").slideToggle("fast");
 		$(".searchInput").focus();
@@ -24,8 +24,8 @@ const documentListener = (cb=null) => {
 		if(!_this.closest('.searchBox').length && !_this.closest('.collapse-box__search').length){
 			// closeNav()
 			$(".searchBox").fadeOut();
-			$("i.timesIcon").removeClass("iconBlock");
-			$("i.searchIcon").removeClass("iconNone");
+			$("i.timesIcon").removeClass("Block");
+			$("i.searchIcon").removeClass("None");
 
 		}
 		// if(!_this.closest('.searchInput').length && !_this.closest('.searchBox').length){

@@ -1,0 +1,54 @@
+extends pug_template/head
+
+block unique-content
+	.container-fluid.main
+			include pug_template/navbar.pug
+			.container.about-container
+				ol.breadCrumb
+					li.px-4.breadCrumb-item
+						a.breadCrumb-link(href='homePage.html') Ana səhifə
+					| |
+					li.px-4.breadCrumb-item.breadCrumb--active
+						| Uğurlarımız və Sertifikatlar
+				.aboutHeader
+					| Sertifikatlar
+				p.about-text.text-justify
+					| 2002-ci ilin aprel ayında fəaliyyətə başlamış Avromed Company QSC dünyanın aparıcı əczaçılıq istehsalçılarının Azərbaycanda ən böyük idxalçısıdır. Şirkətin məqsədi 
+					| Azərbaycan səhiyyə sisteminin müalicə və müayinə qurumlarını, özəl klinikaları və bütün vətəndaşları yüksək keyfiyyətli zəruri əczaçılıq məhsulları ilə təmin etməkdir. 
+					| Öz fəaliyyəti dövründə Avromed şirkəti dünyanın 40-dan çox ölkəsində yerləşən 200-dən artıq əczaçılıq şirkətləri ilə iş birliyi qurmağa nail olmuşdur. Bu gün Avromed 
+					| şirkəti bütün dünyada tanınan Pfizer, Novartis, Roche, Sanofi-Aventis, Abbot, Alcon, Berlin Chemie, Novo Nordisk, Eli Lilly, Takeda kimi nəhəng əczaçılıq sənayeləri ilə 
+					| sıx əməkdaşlıq edir və bu əməkdaşlığın dairəsi gündən-günə genişlənməkdədir. Ölkəyə idxal olan dərman preparatları, tibbi vasitələr və parafarmasevtika 
+					| məhsullarının sayı 17 mindən artıqdır.
+				.row.certificate-row
+					.col-md-4
+						img.w-100.mb-3(src='img/certificate.svg')
+						.orange-point.mr-2
+						p.certificate-text
+							| Nəqliyyat Vasitəsinin İzlənməsi
+					.col-md-4
+						img.w-100.mb-3(src='img/certificate.svg')
+						.orange-point.mr-2
+						p.certificate-text
+							| Nəqliyyat Vasitəsinin İzlənməsi
+					.col-md-4
+						img.w-100.mb-3(src='img/certificate.svg')
+						.orange-point.mr-2
+						p.certificate-text
+							| Nəqliyyat Vasitəsinin İzlənməsi
+				.row.m-bottom
+					.col-md-4
+						img.w-100.mb-3(src='img/certificate.svg')
+						.orange-point.mr-2
+						p.certificate-text
+							| Nəqliyyat Vasitəsinin İzlənməsi
+					.col-md-4
+						img.w-100.mb-3(src='img/certificate.svg')
+						.orange-point.mr-2
+						p.certificate-text
+							| Nəqliyyat Vasitəsinin İzlənməsi
+					.col-md-4
+						img.w-100.mb-3(src='img/certificate.svg')
+						.orange-point.mr-2
+						p.certificate-text
+							| Nəqliyyat Vasitəsinin İzlənməsi
+			include pug_template/footer.pug

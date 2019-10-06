@@ -1,0 +1,72 @@
+extends pug_template/head
+
+block unique-content
+	.container-fluid.main
+			include pug_template/navbar.pug
+			.container.about-container
+				ol.breadCrumb
+					li.px-4.breadCrumb-item
+						a.breadCrumb-link(href='homePage.html') Ana səhifə
+					| |
+					li.px-4.breadCrumb-item.breadCrumb--active
+						| Wialon
+				.aboutHeader
+					| WIALON LOCAL
+				p.wia-text.text-justify
+					| Wialon Local – Wialon adlı nəqliyyatın peyk vasitəsi ilə izlənməsi sisteminin server versiyasıdır. Funksionalın modul quruluşunun sayəsində istifadəçi yalnız biznesinin idarəsində lazım olan imkanları seçə bilir. Sistem yüzdən bir neçə minə qədər obyektə sahib olan operatorlar üçün uyğundur və orta güclü serverlərdə belə quraşdırıla bilər. Platforma idarəsinin intellektual interfeysi isə serverləri uzaq məsafədən belə işə salmağa və dayandırmağa imkan verir.
+				p.mt-4.wia-text.text-justify.MB-20 Cihazın funksional imkanları:
+				.row
+					.col-md-4
+						ul.wia-grp
+							li.wia-item.mb-4
+								.bigOrnangePoint
+								p.ml-4.wia-text
+									| Obyektlərin online monitorinqi
+							li.wia-item.mb-4
+								.bigOrnangePoint
+								p.ml-4.wia-text
+									| Sürücünün idarə etmə tərzinə nəzarət
+							li.wia-item
+								.bigOrnangePoint
+								p.ml-4.wia-text
+									| Rahat idarəetmə
+					.col-md-4
+						ul.wia-grp
+							li.wia-item.mb-4
+								.bigOrnangePoint
+								p.ml-4.wia-text
+									| Dashboard’da KPI-hesabatı
+							li.wia-item.mb-4
+								.bigOrnangePoint
+								p.ml-4.wia-text
+									| Yanacaq istehlakının hesabatı
+							li.wia-item
+								.bigOrnangePoint
+								p.ml-4.wia-text
+									| Bildiriş sistemi
+					.col-md-4
+						ul.wia-grp
+							li.wia-item.mb-4
+								.bigOrnangePoint
+								p.ml-4.wia-text
+									| Marşrutun yönləndirməsi sistemi
+							li.wia-item.mb-4
+								.bigOrnangePoint
+								p.ml-4.wia-text
+									| Taxoqraf məlumatları ilə işləmək imkanı
+							li.wia-item
+								.bigOrnangePoint
+								p.ml-4.wia-text
+									| Çevik hesabat sistemi
+				p.wia-text.text-justify
+					| Wialon Local izləmə sistemi müxtəlif avtomobil kontrollerləri, personal və proqram GPS trekerləri üçün uyğundur. Gurtam’ın aktiv şəkildə GPS avadanlıqlarının istehlakçıları ilə əməkdaşlıq etməsi yeni cihazların Wialon ilə fasiləsiz inteqrasiya etməsinə imkan verir. Bu isə izləmə sisteminin tamamilə çevik olmasını və istənilən GPS avadanlıqlarını istifadə edən müştərilər üçün əlverişli olmasını təmin edir
+				.wia-header
+					| WIALON
+				.wia-box
+					img.img-fluid.float-right.wia-img(src='img/wialon-img.svg' 8alt='computer laptop smartphone')
+					p.wia-text.text-justify
+						| Wialon – nəqliyyat vasitələrinin, əməkdaşların və stasionar obyektlərin Belarus istehsalı GPS izlənməsi sistemidir. Bugünkü gündə Wialon sistemi 120 ölkədə, 1 000 000-dan çox obyektdə aktiv şəkildə istifadə olunur. Məhz bu səbəbdən biz əminliklə deyə bilərik ki, Wialon sisteminin həll yolları etibarlıdır və bu həqiqət dünya üzrə artıq təsdiq olunmuşdur. Sistemin əsas üstünlüklərindən biri çevik olmasıdır. Digər rəqiblərdən fərqli olaraq Wialon 5 ədəd standart hesabat deyil, sistemi istəyinizə uyğun olaraq dəyişərək hədsiz sayda, yalnız sizin şirkətinizin xüsusiyyətlərinə uyğun hesabat əldə etmək imkanı verir.
+						| Wialon asanlıqla sizin işgüzar və biznes proseslərinizə uyğunlaşır, sistemin hesabat “konstruktoru” isə avtoparkın və əməkdaşların işini tez və effektiv şəkildə optimallaşdırmağa kömək edir.
+					a.float-left.wia-btn(href="")
+						| Sistemə daxil ol 
+			include pug_template/footer.pug
