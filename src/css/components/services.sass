@@ -2,35 +2,36 @@
 	margin-top: 6rem
 	margin-bottom: 9rem
 	padding: 0 4rem
-.PX-4
-	padding: 0 4rem!important
-// .list-grp
-// 	font: 400 25px $main-font
-	// color: $main-color
-.list-item
-	// padding: 0.7rem 0 1rem 2.5rem	
-	padding: 0.3rem 2.5rem
+.list-item		
 	border-radius: 3px
 	border: solid 1px rgba(134,139,162, .3)
-	// padding: 1rem 0
 	margin-bottom: 5rem
 	cursor: pointer
+	transition: 0.4s all
 	.list-item__header
-		font: 400 25px $main-font
+		margin-bottom: 0
+		padding: 0.3rem 0 0.3rem 2.5rem
+		font: 400 2.5rem $main-font
 		color: $main-color
 		display: flex
 		flex-direction: row
 		.list-item__plus
-			width: 21px
-		.list-item__times
-			color: $button-color
-			display: none
-			width: 21px
+			max-height: 36px
+			transition: 0.4s all
 	.list-item__text
+		padding: 0.8rem 2.5rem 3.2rem 2.5rem
 		display: none
 		font: 400 14px $main-font
 		color: $third-color
 .list-item--active
-	border: 0
+	border-color: white
 	box-shadow: 4px 4px 20px #E8F2FF
-	transition: 0.4s all
+.plus-times
+	transform: rotate(-45deg)
+	color: $button-color
+@media (max-width: 991px)
+	.services-row
+		padding: 0
+@media (max-width: 500px)
+	.PX-4
+		padding: 0 0.5rem!important

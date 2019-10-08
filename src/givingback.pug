@@ -3,35 +3,32 @@ extends pug_template/head
 block unique-content
 	.container-fluid.main
 		include pug_template/navbar.pug
-		.container.about-container
+		.container
 			ol.breadCrumb
 				li.px-4.breadCrumb-item
 					a.breadCrumb-link(href='homePage.html') Ana səhifə
 				| |
+				li.px-4.breadCrumb-item
+					a.breadCrumb-link(href='') Müştərilərə
+				| |
 				li.px-4.breadCrumb-item.breadCrumb--active
-					| Şirkət haqqında
-			.aboutHeader
-				| Şirkət haqqında
-			p.about-text.text-justify
+					| Məhsulun qaytarılması
+			.mt-5.spaceDiv
+			.mt-5.mb-5.contentHeader
+				| Məhsulun qaytarılması
+			.mb-5.spaceDiv
+			p.mb-4.contentText.text-justify
 				| 2002-ci ilin aprel ayında fəaliyyətə başlamış Avromed Company QSC dünyanın aparıcı əczaçılıq istehsalçılarının Azərbaycanda ən böyük idxalçısıdır. Şirkətin məqsədi 
 				| Azərbaycan səhiyyə sisteminin müalicə və müayinə qurumlarını, özəl klinikaları və bütün vətəndaşları yüksək keyfiyyətli zəruri əczaçılıq məhsulları ilə təmin etməkdir. 
 				| Öz fəaliyyəti dövründə Avromed şirkəti dünyanın 40-dan çox ölkəsində yerləşən 200-dən artıq əczaçılıq şirkətləri ilə iş birliyi qurmağa nail olmuşdur. Bu gün Avromed 
 				| şirkəti bütün dünyada tanınan Pfizer, Novartis, Roche, Sanofi-Aventis, Abbot, Alcon, Berlin Chemie, Novo Nordisk, Eli Lilly, Takeda kimi nəhəng əczaçılıq sənayeləri ilə 
 				| sıx əməkdaşlıq edir və bu əməkdaşlığın dairəsi gündən-günə genişlənməkdədir. Ölkəyə idxal olan dərman preparatları, tibbi vasitələr və parafarmasevtika 
 				| məhsullarının sayı 17 mindən artıqdır.
-			p.about-text.text-justify
+			p.contentText.text-justify.MB-15
 				| Avromed şirkəti biznesin təşkili üzrə Avropanın ən müasir standartlarını Azərbaycan əczaçılıq bazarında əczaçılıq ticarətinin təşkilinə tətbiq etməklə yeni tipli satış 
 				| şəbəkəsi yaratmağa nail olmuşdur. Ölkənin bütün ərazisində Avromed şirkətinin infrastrukturunda çalışan əməkdaşların sayı 1150 nəfərdən çoxdur. Bu infrastruktura 
 				| Bakıda yerləşən Avromed mərkəzi ofisi və Gəncə, Sumqayıt, Mingəçevir, Şamaxı, Şirvan, Şəki, Lənkəran, Xaçmaz, Qazax və Bərdə şəhərlərində yerləşən 10 regional 
 				| ofisləri daxildir. Bu struktur genişlənməkdə davam edir və hal-hazırda Azərbaycanın digər şəhərlərində yeni regional ofislərin açılması istiqamətində iş aparılır. 
 				| Avromed Şirkəti Azərbaycan cəmiyyətində və biznes aləmində yaxşı tanınan ən böyük şirkətlərdən biridir. Ölkədə əczaçılıq sahəsində verdiyi töhfələrə görə 
 				| Consulting&Business jurnalı tərəfindən 2010, 2012 və 2017-ci illərdə “UĞUR” Milli Mükafatına layıq görülmüşdür.
-			.aboutHeader.m-top
-				| Şirkət rəhbərinin müraciəti
-			p.about-text.text-justify.MB-15
-				img.img-fluid.float-left(src='img/businessman.svg' alt='Businessman').about-img
-				| 2002-ci ilin aprel ayında fəaliyyətə başlamış Avromed Company QSC dünyanın aparıcı əczaçılıq istehsalçılarının Azərbaycanda ən böyük idxalçısıdır. Şirkətin məqsədi 
-				| Azərbaycan səhiyyə sisteminin müalicə və müayinə qurumlarını, özəl klinikaları və bütün vətəndaşları yüksək keyfiyyətli zəruri əczaçılıq məhsulları ilə təmin etməkdir.  Öz fəaliyyəti dövründə Avromed şirkəti dünyanın 40-dan çox ölkəsində yerləşən 200-dən artıq əczaçılıq şirkətləri ilə iş birliyi qurmağa nail olmuşdur. Bu gün Avromed 
-				| şirkəti bütün dünyada tanınan Pfizer, Novartis, Roche, Sanofi-Aventis, Abbot, Alcon, Berlin Chemie, Novo Nordisk, Eli Lilly, Takeda kimi nəhəng əczaçılıq sənayeləri ilə 
-				| sıx əməkdaşlıq edir və bu əməkdaşlığın dairəsi gündən-günə genişlənməkdədir. Ölkəyə idxal olan dərman 
 		include pug_template/footer.pug

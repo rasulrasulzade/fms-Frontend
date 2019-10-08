@@ -1,0 +1,54 @@
+extends pug_template/head
+
+block unique-content
+	.container-fluid.main
+		include pug_template/navbar.pug
+		.container.about-container
+			ol.breadCrumb
+				li.px-4.breadCrumb-item
+					a.breadCrumb-link(href='homePage.html') Ana səhifə
+				| |
+				li.px-4.breadCrumb-item
+					a.breadCrumb-link(href='equipments.html') Avadanlıqlar
+				| |
+				li.px-4.breadCrumb-item.breadCrumb--active
+					| RUPTELA FM-ECO4 light
+			.mt-5.spaceDiv
+			.mt-5.mb-5.contentHeader
+				| RUPTELA FM-ECO4 light
+			.mb-5.spaceDiv
+			.row.MB-15
+				.col-md-4.mb-4
+					img.img-fluid(src='img/equipment-img.svg')
+				.col-md-8
+					p.mb-4.contentText
+						| FM-Eco4 – ən kiçik ölçülərə malik GPS/Glonass cihazıdır. Əsas funksiyaların yerinə yetirilməsi üçün 
+						| nəzərdə tutulmuş cihaz nəqliyyat vasitələrinin yerini, sürətini, marşrutunu, yanacaq səviyyəsini və 
+						| digər parametrləri nəzarət altında saxlamaq məqsədi ilə quraşdırılır
+					p.mb-4.contentText
+						| Cihazın daxili GPS/Glonass/GSM antenləri ilə təchiz olunması cihaz ölçülərinin balacalaşdırılmasına, 
+						| quraşdırılmanın isə sadələşdirilməsinə imkan verir. Cihaz rahat şəkildə nəqliyyat vasitəsinin istənilən 
+						| yerində quraşdırıla bilər.
+					ul.equipment-list
+						li.equipment-list__item.mb-4
+							img.img-fluid.mt-n2.mr-4.equipment-list__img(src='img/XMLID_1062_.svg') 
+							| Sürücünün idarə etmə tərzinə nəzarət
+						li.equipment-list__item.mb-4
+							img.mt-n2.mr-4.equipment-list__img(src='img/Group 360.svg') 
+							| Mühərrikin uzaq məsafədən bloka salınması
+						li.equipment-list__item.mb-4
+							img.mt-n2.mr-4.equipment-list__img(src='img/thermometer.svg') 
+							| Temperatur rejiminə nəzarət 
+						li.equipment-list__item.mb-4
+							img.mt-n2.mr-4.equipment-list__img(src='img/website.svg') 
+							| Sürücünün qeydiyyatı və identifikasiyası
+						li.equipment-list__item.mb-4
+							img.mt-n2.mr-4.equipment-list__img(src='img/Group 361.svg') 
+							| GSM siqnalının müəyyən edilməsi
+						li.equipment-list__item.mb-4
+							img.mt-n2.mr-4.equipment-list__img(src='img/message-on-phone.svg') 
+							| Müxtəlif SMS funksiyalar
+						li.equipment-list__item.mb-4
+							img.mt-n2.mr-4.equipment-list__img(src='img/map-location.svg') 
+							| Daxili geozonalar ( Internal Geozones )
+		include pug_template/footer.pug

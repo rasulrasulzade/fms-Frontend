@@ -1,0 +1,48 @@
+extends pug_template/head
+
+block unique-content
+	.container-fluid.main
+		include pug_template/navbar.pug
+		.container
+			ol.breadCrumb
+				li.px-4.breadCrumb-item
+					a.breadCrumb-link(href='homePage.html') Ana səhifə
+				| |
+				li.px-4.breadCrumb-item
+					a.breadCrumb-link(href='') Müştərilərə
+				| |
+				li.px-4.breadCrumb-item.breadCrumb--active
+					| Müştəri hüquqları
+			.mt-5.spaceDiv
+			.mt-5.mb-5.contentHeader
+				| Müştəri hüquqları
+			.mb-5.spaceDiv
+			.row.MB-13
+				.col-md-12.PX-4
+					ul.list-grp
+						a(href='')
+							li.py-4.list-item.rights-item 
+								.ml-4.bigOrnangePoint.changeColor
+								p.ml-4.mb-0.rights-item__header 
+									| Sığorta müqaviləsi bağlanarkən sığortaçının müstəqil auditor tərəfindən
+						a(href='')
+							li.py-4.list-item.rights-item 
+								.ml-4.bigOrnangePoint.changeColor
+								p.ml-4.mb-0.rights-item__header 
+									| Sığorta şəhadətnaməsi itdiyi halda sığortaçıdan onun dublikatını almaq; 
+						a(href='')
+							li.py-4.list-item.rights-item 
+								.ml-4.bigOrnangePoint.changeColor
+								p.ml-4.mb-0.rights-item__header 
+									| Dəymiş zərərin məbləğini müəyyənləşdirmək məqsədi 
+						a(href='')
+							li.py-4.list-item.rights-item 
+								.ml-4.bigOrnangePoint.changeColor
+								p.ml-4.mb-0.rights-item__header 
+									| Sığorta müqaviləsi bağlanarkən sığortaçının müstəqil auditor tərəfindən təsdiqlənmiş 
+						a(href='')
+							li.py-4.list-item.rights-item 
+								.ml-4.bigOrnangePoint.changeColor
+								p.ml-4.mb-0.rights-item__header 
+									| Dəymiş zərərin məbləğini müəyyənləşdirmək məqsədi 						
+		include pug_template/footer.pug

@@ -1,0 +1,19 @@
+.rights-item
+	display: flex 
+	align-items: center
+	flex-direction: row
+	margin-bottom: 2rem
+	&:hover
+		border-color: transparent
+		box-shadow: 4px 4px 20px #E8F2FF
+		.changeColor
+			background-color: $button-color
+.changeColor
+	background-color: $third-color
+	transition: 0.4s all
+.rights-item__header 
+	font: 500 2.5rem $main-font
+	color: $main-color
+@media (max-width: 400px)
+	.rights-item__header
+		font-size: 16px
