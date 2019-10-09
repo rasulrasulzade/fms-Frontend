@@ -1,0 +1,68 @@
+extends pug_template/head
+
+block unique-content
+	.container-fluid.main
+			include pug_template/navbar.pug
+			.container.about-container
+				ol.breadCrumb
+					li.px-4.breadCrumb-item
+						a.breadCrumb-link(href='homePage.html') Ana səhifə
+					| |
+					li.px-4.breadCrumb-item.breadCrumb--active
+						| Əlaqə
+				.mt-5.spaceDiv
+				.mt-5.mb-5.contentHeader
+					| Bizimlə Əlaqə 
+				.mb-5.spaceDiv
+				.row.MB-9
+					.col-md-6.mb-5
+						.contact-item.mb-5
+							p.contentText
+								| Ünvan:
+							p.contact-item__text
+								| Bakı şəhəri Yasamal rayonu Şəfayət Mehdiyev küç. 133 A
+							a.contentText.contact-item__link(href='') 
+								| XƏRİTƏDƏ BAX 
+								i.fi-xnlrxl-chevron
+						.contact-item.mb-5
+							p.contentText
+								| Email:
+							p.contact-item__text
+								| info@fms.az
+								br
+								| sales@fms.az
+							a.contentText.contact-item__link(href='') 
+								| BİZƏ YAZ 
+								i.fi-xnlrxl-chevron
+						.contact-item.mb-5
+							p.contentText
+								| Ünvan:
+							p.contact-item__text
+								| +994123100707
+							a.contentText.contact-item__link(href='') 
+								| BİZƏ ZƏNG ET
+								i.fi-xnlrxl-chevron
+					.col-md-6
+						p.mb-5.contentText
+								| İrad və Təkliflərinizi bizə bildirin:
+						form.contact-form
+							.contact-form__item
+								p.contentText
+									| Ad və Soyad	
+								input.w-100.py-4.contactInput(type='text')
+							.contact-form__input-box
+								.contact-form__item
+									p.contentText
+										| Email
+									input.py-4.contactInput.W-24(type='Email')
+								.contact-form__item
+									p.contentText
+										| Mövzu	
+									input.py-4.contactInput.W-24(type='text')
+							.contact-form__item.mb-5
+								p.contentText
+									| Mesaj	
+								textarea.w-100.py-2.contactInput.H-19
+							button.contentBtn.float-right.Bahar
+								| Göndər
+			include pug_template/footer.pug

@@ -1,0 +1,57 @@
+extends pug_template/head
+
+block unique-content
+	.container-fluid.main
+		include pug_template/navbar.pug
+		.container
+			ol.breadCrumb
+				li.px-4.breadCrumb-item
+					a.breadCrumb-link(href='homePage.html') Ana səhifə
+				| |
+				li.px-4.breadCrumb-item.breadCrumb--active
+					| Xəbərlər
+			.mt-5.spaceDiv
+			.mt-5.mb-5.contentHeader
+				| Xəbərlər
+			.mb-5.spaceDiv
+			.row.myRow
+				.common-content.px-0.news
+					a.news__link(href="")
+						img.pb-4.news__img(src="img/news.png" alt="mobile tracking")
+						.mx-5.time
+							.orange-point 
+							.news__date Yanvar 8, 2018
+						p.mx-5.common-content__name
+							| Nəqliyyat Vasitəsinin İzlənməsi
+						p.mx-5.common-content__text
+							| Sürət həddinin aşılması, temperatur rejiminin  dəyişilməsi, yanacağın boşaldılması,  yükün icazə
+						.mx-5.mt-5.news__information-link
+							| Ətraflı oxu
+				.common-content.px-0.news
+					a.news__link(href="")
+						img.pb-4.news__img(src="img/news.png" alt="mobile tracking")
+						.mx-5.time
+							.orange-point 
+							.news__date Yanvar 8, 2018
+						p.mx-5.common-content__name
+							| Nəqliyyat Vasitəsinin İzlənməsi
+						p.mx-5.common-content__text
+							| Sürət həddinin aşılması, temperatur rejiminin  dəyişilməsi, yanacağın boşaldılması,  yükün icazə
+						.mx-5.mt-5.news__information-link
+							| Ətraflı oxu
+				.common-content.px-0.news
+					a.news__link(href="")
+						img.pb-4.news__img(src="img/news.png" alt="mobile tracking")
+						.mx-5.time
+							.orange-point 
+							.news__date Yanvar 8, 2018
+						p.mx-5.common-content__name
+							| Nəqliyyat Vasitəsinin İzlənməsi
+						p.mx-5.common-content__text
+							| Sürət həddinin aşılması, temperatur rejiminin  dəyişilməsi, yanacağın boşaldılması,  yükün icazə
+						.mx-5.mt-5.news__information-link
+							| Ətraflı oxu
+			.row.mx-2.MT-6.MB-15
+				a.contentBtn(href="")
+					| Daha əvvəlki xəbərlər
+		include pug_template/footer.pug
