@@ -1,11 +1,14 @@
 'use strict'
 import navbar from './navbar'
 import servicFunc from './services'
+import orangeText from './cooperation'
 $(document).ready(function(){
 
  navbar();
 
  servicFunc();
+
+ orangeText();
 
   $('.slider-area').slick({
       dots: true,
@@ -40,5 +43,4 @@ $(document).ready(function(){
       ]
     });
     $(".slick-dots li button").text("");
-     
 });

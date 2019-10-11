@@ -1,0 +1,115 @@
+.gender-option
+	font: 200 14px $main-font
+	color: $main-color
+	margin-bottom: 0
+.gender-box
+	width: 236px
+	display: flex
+	justify-content: space-between
+.gender-option
+	display: flex
+	align-items: center
+input[type='radio']
+  &:after
+    width: 13px
+    height: 13px
+    border-radius: 15px
+    top: -2px
+    left: -1px
+    position: relative
+    background-color: white
+    content: ''
+    display: inline-block
+    visibility: visible
+    border: 0.5px solid $third-color
+
+  &:checked:after
+    width: 13px
+    height: 13px
+    border-radius: 15px
+    top: -2px
+    left: -1px
+    position: relative
+    background-color: $button-color
+    content: ''
+    display: inline-block
+    visibility: visible
+    border: 0.5px solid $button-color
+.cooperation-form__line
+	display: flex
+	justify-content: space-between
+.form-grp
+    margin-bottom: 0!important
+.cooperation-form__text
+    transition: 0.4s all
+.cooperation-input
+	border: solid 0.5px $third-color!important
+	border-radius: 3px!important
+	font: 400 18px $main-font!important
+	color: $main-color!important
+    outline: none!important
+	&:focus
+		outline: none
+		border: white!important
+		box-shadow: 4px 4px 20px $shadow-color!important
+.W-38
+	width: 38rem!important
+.W-16
+	width: 16rem!important
+.H-8
+    height: 8rem!important
+// .cooperation-bigInput:focus ~ .cooperation-elem__text
+// 	color: $button-color!important
+// #exampleInputEmail1:focus ~ label 
+// 	color: $button-color!important
+.orangeText
+	color: $button-color!important
+.country-city
+    display: flex
+    justify-content: space-between 
+.no-robot
+    width: 120px
+    height: 50px
+    font: 700 28px $main-font
+    font-style: italic
+    color: $main-color
+    text-align: center
+    line-height: 50px
+.add-file
+    background-color: white
+    font: 200 14px $main-font
+    color: $main-color
+    border: solid 0.5px $third-color!important
+    border-radius: 3px!important
+    height: 36.5px
+    cursor: pointer
+    // text-align: center
+    line-height: 36.5px
+.add-file input[type='file']
+    display: none
+.button-box
+    // flex-direction: row-reverse
+    flex-direction: row
+    justify-content: flex-end
+.form-button
+    width: 15.3rem
+@media (max-width: 767px)
+    .gender-box
+        margin: 0 auto 0 auto
+    .cooperation-form__line
+        // display: flex
+        justify-content: center
+        flex-direction: column
+    .form-grp
+        margin: 0 auto 3rem auto!important
+        // margin-bottom: 30px
+    .country-city
+        margin: 0 auto 0 auto
+    .button-box
+       flex-direction: row
+       justify-content: center
+@media (max-width: 340px)
+    .form-grp
+        width: 100%!important 
+    .country-city
+        width: 100%!important

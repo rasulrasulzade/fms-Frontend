@@ -1,0 +1,58 @@
+.oneOfNewsHeader-box
+	display: flex
+	justify-content: space-between
+.oneOfNewsHeader
+	font: 500 32px $main-font
+	color: $main-color
+.oneOfNewsDate-box
+	display: flex
+	justify-content: center
+	align-items: flex-end
+.midOrangePoint
+	background-color: $button-color
+	min-width: 8px
+	max-width: 8px
+	min-height: 8px
+	max-height: 8px
+	border-radius: 50%
+.oneOfNewsDate
+	font: 200 14px $main-font
+	color: $main-color
+.news-line
+	border: solid 0.5px $third-color
+	margin-right: -15px
+	margin-left: -15px
+.tagsShare-box
+	display: flex
+	justify-content: space-between
+.tags-box
+	display: flex
+	justify-content: center
+	align-items: center
+.tags-text
+	font: 500 14px $main-font
+	color: $main-color
+.tags-input
+	width: 60px
+	border: solid 1px rgba(112, 112, 112, 0.28)
+	border-radius: 4px
+	font: 300 14px $main-font
+	color: $main-color
+.share-box
+	display: flex
+	justify-content: center
+	align-items: center
+.newsRow
+	margin-bottom: 15rem
+@media (max-width: 768px)
+	.oneOfNewsHeader-box
+		flex-direction: column
+	.oneOfNewsDate-box
+		justify-content: flex-start 
+	.newsImg-row
+		padding-left: 15px
+		padding-right: 15px
+	.news-line
+		margin: 0
+	.newsRow
+		margin-bottom: 13rem
