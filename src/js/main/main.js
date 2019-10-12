@@ -1,7 +1,9 @@
 'use strict'
 import navbar from './navbar'
 import servicFunc from './services'
-import orangeText from './cooperation'
+import orangeText from './corporation'
+import slickSlider from './slider'
+import contact from './contact'
 $(document).ready(function(){
 
  navbar();
@@ -10,37 +12,43 @@ $(document).ready(function(){
 
  orangeText();
 
-  $('.slider-area').slick({
-      dots: true,
-      slidesToShow: true,
-      slidesToShow: 7,
-      slidesToScroll: 1,
-      autoplay: true,
-      speed: 600,
-      arrows: true,
-      // centerMode: true,
-      prevArrow: '<button class="slide-arrow prev-arrow"><i class="fa fa-chevron-left"></i></button>',
-      nextArrow: '<button class="slide-arrow next-arrow"><i class="fa fa-chevron-right"></i></button>',
-      responsive: [
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 5
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 3
-          }
-        },
-        {
-          breakpoint: 400,
-          settings: {
-            slidesToShow: 1
-          }
-        }
-      ]
-    });
-    $(".slick-dots li button").text("");
+ slickSlider();
+ 
+ contact();
+
+ymaps.ready(init);
+        function init(){
+            var myMap = new ymaps.Map("map", {
+                center: [52.5200, 13.4050],
+                zoom: 22,
+                // controls: ['zoomControl', 'fullscreenControl']
+            });
+            // myGeoObject = new ymaps.GeoObject({
+            //   geometry: {
+            //     type: "Point", // geometry type - point
+            //     coordinates: [52.5200, 13.4050] // координаты точки
+            //   }
+            // });
+              // myMap.geoObjects.add(myGeoObject); // Placing a geo object on the map.
+
+              // from FIZZA
+               var myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                                          balloonContent: '<strong>blue</strong> color',
+                                          iconCaption: 'Fizza'
+                                      }, {
+                                          // Опции.
+                                          // Необходимо указать данный тип макета.
+                                          iconLayout: 'default#image',
+                                          // Своё изображение иконки метки.
+                                          iconImageHref: 'img/maps-and-flags.png',
+                                          // Размеры метки.
+                                          iconImageSize: [40, 55],
+                                          // Смещение левого верхнего угла иконки относительно
+                                          // её "ножки" (точки привязки).
+                                          // iconImageOffset: [-5, -38]
+                                      })
+                                      myMap.geoObjects.add(myPlacemark)
+            // the end
+         }
+
 });
