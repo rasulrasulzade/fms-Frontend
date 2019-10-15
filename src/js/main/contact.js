@@ -10,4 +10,18 @@ const contact = ()=> {
 	});
 }
 
-export default contact
+const contact__OrangeText = ()=> {
+	let count=$('.contactInput').length;
+	  for (let i=0; i<count; i++) {
+	        // console.log(i);
+	    $('.contactInput:eq('+i+')').focus(function(){
+	          $('.contactInputText:eq('+i+')').addClass('orangeText');
+	    });
+	    $('.contactInput:eq('+i+')').focusout(function(){
+	          $('.contactInputText:eq('+i+')').removeClass('orangeText');
+	    });       
+	  }
+}
+
+// export default contact
+export {contact, contact__OrangeText}

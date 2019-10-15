@@ -5,11 +5,19 @@
 	color: $button-color!important
 	&:hover
 		text-decoration: underline!important
+.contactInputText
+	transition: 0.4s all
 .contactInput
-	border: solid 1px $main-color
+	border: solid 0.5px $third-color!important
 	border-radius: 5px
 	font: 400 14px $main-font
 	color: $main-color
+	outline: none!important
+	transition: 0.4s all
+	&:focus
+		outline: none
+		border: white!important
+		box-shadow: 4px 4px 20px $shadow-color!important
 .contact-form__item
 	margin-bottom: 6.8rem
 .contact-form__input-box
