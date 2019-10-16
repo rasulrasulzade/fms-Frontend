@@ -1002,23 +1002,22 @@ body::after {
   transition: 0.4s all; }
 
 .contactInput {
-  border: solid 0.5px #868BA2 !important;
+  border: solid 0.5px #868BA2;
+  -webkit-box-shadow: 4px 4px 20px white;
+     -moz-box-shadow: 4px 4px 20px white;
+          box-shadow: 4px 4px 20px white;
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
   font: 400 14px Roboto;
   color: #445666;
-  outline: none !important;
-  -webkit-transition: 0.4s all;
-  -o-transition: 0.4s all;
-  -moz-transition: 0.4s all;
-  transition: 0.4s all; }
+  outline: none !important; }
   .contactInput:focus {
     outline: none;
     border: white !important;
-    -webkit-box-shadow: 4px 4px 20px #E8F2FF !important;
-       -moz-box-shadow: 4px 4px 20px #E8F2FF !important;
-            box-shadow: 4px 4px 20px #E8F2FF !important; }
+    -webkit-box-shadow: 4px 4px 20px #E8F2FF;
+       -moz-box-shadow: 4px 4px 20px #E8F2FF;
+            box-shadow: 4px 4px 20px #E8F2FF; }
 
 .contact-form__item {
   margin-bottom: 6.8rem; }

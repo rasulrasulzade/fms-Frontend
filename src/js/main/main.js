@@ -23,7 +23,7 @@ $(document).ready(function(){
 ymaps.ready(init);
         function init(){
             var myMap = new ymaps.Map("map", {
-                center: [52.5200, 13.4050],
+                center: [40.387659, 49.815589],
                 zoom: 22,
                 // controls: ['zoomControl', 'fullscreenControl']
             });
