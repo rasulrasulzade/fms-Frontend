@@ -1,5 +1,5 @@
 const contact = ()=> {
-	$(".contact-item__link").click(function(e) {
+	$(".map-link").click(function(e) {
 		e.preventDefault()
 		const href = $(this).attr("href")
 		// console.log($(href).offset().top)

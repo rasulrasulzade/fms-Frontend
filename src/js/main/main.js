@@ -24,7 +24,7 @@ ymaps.ready(init);
         function init(){
             var myMap = new ymaps.Map("map", {
                 center: [40.387659, 49.815589],
-                zoom: 22,
+                zoom: 17,
                 // controls: ['zoomControl', 'fullscreenControl']
             });
             // myGeoObject = new ymaps.GeoObject({
