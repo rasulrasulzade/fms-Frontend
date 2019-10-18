@@ -83,10 +83,12 @@ block unique-content
 							input#no-ropotText.form-control.corporation-input.w-100(type='text', aria-describedby='no-ropotTextHelp')
 							small#no-ropotTextHelp.form-text.text-muted We'll never share your email with anyone else.
 						.form-group.form-grp.W-38
-							label.add-file.w-100
-								input#input-file(type='file')
-								img.mx-4(src='img/attachment.svg')
-								| Fayl əlavə et
+							.add-file.w-100
+								input.b-invoice__input(type='file', multiple='')
+								.b-invoice__infos
+									img.mx-4(src='img/attachment.svg')
+									p.add-file__text.mr-4.mb-0 Fayl əlavə et
+									.b-invoice__extensions
 					.mt-5.corporation-form__line.button-box.MB-15
 						button.px-5.contentBtn.form-button
 							| Göndər						

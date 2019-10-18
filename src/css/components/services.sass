@@ -8,27 +8,21 @@
 	margin-bottom: 5rem!important
 	cursor: pointer
 	transition: 0.4s all
-	// width: 450px
-	// height: 50px
 .accordion-item__header
 	margin-bottom: 0
 	padding: 1px 0!important
 	font: 400 2.5rem $main-font!important
 	color: $main-color!important
 	display: flex !important
-	// flex-direction: row
 	justify-content: center
 	align-items: center
 	text-decoration: none!important
 .plus-icon
-	// width: 15px
-	// max-height: 20px
 	color: $third-color
 	font-size: 35px
 	transition: 0.4s all
 .accordion-item__text
 	padding: 0.8rem 2.5rem 3.2rem 2.5rem
-	// display: none
 	font: 400 14px $main-font
 	color: $third-color
 .accordion-item--active
@@ -41,6 +35,9 @@
 @media (max-width: 991px)
 	.services-row
 		padding: 0
+@media (min-width: 768px) and (max-width: 991px)
+	.service-header
+		font-size: 1.8rem!important
 @media (max-width: 768px)
 	.accordion-item
 		width: 100%

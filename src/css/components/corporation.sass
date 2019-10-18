@@ -76,24 +76,55 @@ input[type='radio']
     color: $main-color
     text-align: center
     line-height: 50px
-.add-file
-    background-color: white
-    font: 200 14px $main-font
-    color: $main-color
-    border: solid 0.5px $third-color!important
-    border-radius: 3px!important
-    height: 36.5px
-    cursor: pointer
-    // text-align: center
-    line-height: 36.5px
-.add-file input[type='file']
-    display: none
+// .add-file
+//     background-color: white
+//     font: 200 14px $main-font
+//     color: $main-color
+//     border: solid 0.5px $third-color!important
+//     border-radius: 3px!important
+//     height: 36.5px
+//     cursor: pointer
+//     // text-align: center
+//     line-height: 36.5px
+// .add-file input[type='file']
+//     display: none
 .button-box
     // flex-direction: row-reverse
     flex-direction: row
     justify-content: flex-end
 .form-button
     width: 15.3rem
+.add-file 
+    cursor: pointer
+    position: relative
+    border-radius: 3px
+    border: solid 0.5px $third-color
+    /* width: 390px; */
+    height: 40px
+    /* margin: 200px; */
+.b-invoice__input 
+    opacity: 0
+    width: 100%
+    height: 100%
+    cursor: pointer
+.b-invoice__infos 
+    width: 100%!important
+    z-index: -1
+    transform: translate(-50%, -50%)
+    position: absolute
+    position: absolute
+    left: 50%
+    top: 50%
+    display: flex
+    flex-direction: row
+    align-items: center
+    font: 200 14px $main-font
+    color: $main-color
+.b-invoice__extensions 
+    display: block
+.add-file__text 
+    font: 200 14px $main-font
+    color: $main-color
 @media (max-width: 767px)
     .gender-box
         margin: 0 auto 0 auto

@@ -9,7 +9,7 @@ block unique-content
 					a.breadCrumb-link(href='homePage.html') Ana səhifə
 				| |
 				li.px-4.breadCrumb-item
-					a.breadCrumb-link(href='') Müştərilərə
+					a.breadCrumb-link.breadCrumb-passive-link Müştərilərə
 				| |
 				li.px-4.breadCrumb-item.breadCrumb--active
 					| Müştəri hüquqları
@@ -19,30 +19,29 @@ block unique-content
 			.mb-5.spaceDiv
 			.row.MB-13
 				.col-md-12.PX-4
-					ul.list-grp
-						a(href='')
-							li.py-4.list-item.rights-item 
-								.ml-4.bigOrnangePoint.changeColor
-								p.ml-4.mb-0.rights-item__header 
-									| Sığorta müqaviləsi bağlanarkən sığortaçının müstəqil auditor tərəfindən
-						a(href='')
-							li.py-4.list-item.rights-item 
-								.ml-4.bigOrnangePoint.changeColor
-								p.ml-4.mb-0.rights-item__header 
-									| Sığorta şəhadətnaməsi itdiyi halda sığortaçıdan onun dublikatını almaq; 
-						a(href='')
-							li.py-4.list-item.rights-item 
-								.ml-4.bigOrnangePoint.changeColor
-								p.ml-4.mb-0.rights-item__header 
-									| Dəymiş zərərin məbləğini müəyyənləşdirmək məqsədi 
-						a(href='')
-							li.py-4.list-item.rights-item 
-								.ml-4.bigOrnangePoint.changeColor
-								p.ml-4.mb-0.rights-item__header 
-									| Sığorta müqaviləsi bağlanarkən sığortaçının müstəqil auditor tərəfindən təsdiqlənmiş 
-						a(href='')
-							li.py-4.list-item.rights-item 
-								.ml-4.bigOrnangePoint.changeColor
-								p.ml-4.mb-0.rights-item__header 
-									| Dəymiş zərərin məbləğini müəyyənləşdirmək məqsədi 						
+					a(href='')
+						.py-4.rights-item 
+							.ml-4.bigOrangePoint.changeColor
+							p.ml-4.mb-0.rights-item__header 
+								| Sığorta müqaviləsi bağlanarkən sığortaçının müstəqil auditor tərəfindən
+					a(href='')
+						.py-4.rights-item 
+							.ml-4.bigOrangePoint.changeColor
+							p.ml-4.mb-0.rights-item__header 
+								| Sığorta şəhadətnaməsi itdiyi halda sığortaçıdan onun dublikatını almaq; 
+					a(href='')
+						.py-4.rights-item 
+							.ml-4.bigOrangePoint.changeColor
+							p.ml-4.mb-0.rights-item__header 
+								| Dəymiş zərərin məbləğini müəyyənləşdirmək məqsədi 
+					a(href='')
+						.py-4.rights-item 
+							.ml-4.bigOrangePoint.changeColor
+							p.ml-4.mb-0.rights-item__header 
+								| Sığorta müqaviləsi bağlanarkən sığortaçının müstəqil auditor tərəfindən təsdiqlənmiş 
+					a(href='')
+						.py-4.rights-item 
+							.ml-4.bigOrangePoint.changeColor
+							p.ml-4.mb-0.rights-item__header 
+								| Dəymiş zərərin məbləğini müəyyənləşdirmək məqsədi 	
 		include pug_template/footer.pug
