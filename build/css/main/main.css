@@ -1,3 +1,16 @@
+html {
+  font-size: 10px; }
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif; }
+
+a {
+  text-decoration: none !important; }
+
 .MT-16 {
   margin-top: 16.5rem; }
 
@@ -15,6 +28,9 @@
 
 .MB-13 {
   margin-bottom: 13rem; }
+
+.MB-11 {
+  margin-bottom: 11rem; }
 
 .MB-10 {
   margin-bottom: 10rem; }
@@ -120,7 +136,10 @@
 .myNav {
   padding: 0 !important;
   font: 400 14px Roboto;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-box-shadow: none !important;
+     -moz-box-shadow: none !important;
+          box-shadow: none !important; }
 
 .navbar-logo {
   font-size: 10px !important;
@@ -197,21 +216,23 @@
 
 .searchInput {
   outline: 0;
-  border: 0;
+  border-top: solid 1px #445666;
+  border-bottom: solid 1px #445666;
+  border-left: solid 1px #445666;
   font: 400 14px Roboto;
   -webkit-border-radius: 20px 0 0 20px;
      -moz-border-radius: 20px 0 0 20px;
           border-radius: 20px 0 0 20px;
   padding: 5px 5px 5px 12px;
   width: 88%;
-  height: 100%;
-  -webkit-box-shadow: 0 10px 20px #E8F2FF;
-     -moz-box-shadow: 0 10px 20px #E8F2FF;
-          box-shadow: 0 10px 20px #E8F2FF; }
+  height: 100%; }
 
 .searchBtn {
   outline: 0;
   border: 0;
+  border-top: solid 1px #445666;
+  border-bottom: solid 1px #445666;
+  border-right: solid 1px #445666;
   font: 400 14px Roboto;
   -webkit-border-radius: 0 20px 20px 0;
      -moz-border-radius: 0 20px 20px 0;
@@ -219,10 +240,7 @@
   margin-left: -3px;
   padding: 5px;
   width: 12%;
-  background-color: white;
-  -webkit-box-shadow: 0 10px 20px #E8F2FF;
-     -moz-box-shadow: 0 10px 20px #E8F2FF;
-          box-shadow: 0 10px 20px #E8F2FF; }
+  background-color: white; }
 
 .drop .navbarLink {
   cursor: pointer; }
@@ -264,7 +282,7 @@
     position: relative;
     display: block !important;
     width: 100% !important;
-    margin: 0 0 8px 0;
+    margin: 8px 0;
     top: 0;
     padding: 0 2rem; }
   .collapse-box__search {
@@ -280,19 +298,6 @@
     width: 142px;
     margin-top: 1rem;
     margin-bottom: 1rem; } }
-
-html {
-  font-size: 10px; }
-
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: Roboto, sans-serif; }
-
-a {
-  text-decoration: none !important; }
 
 .main {
   padding: 0 !important; }
@@ -412,26 +417,6 @@ a {
   .common-content .common-content__text {
     font-weight: 300;
     color: #445666; }
-
-.information-button {
-  margin-top: 4.8rem;
-  cursor: pointer;
-  border: solid 1px #F7791C;
-  font-size: 14px;
-  font-weight: 300;
-  padding: 0.6rem 3.6rem;
-  -webkit-border-radius: 25px;
-     -moz-border-radius: 25px;
-          border-radius: 25px;
-  color: white !important;
-  background-color: #F7791C; }
-  .information-button:hover {
-    color: #F7791C !important;
-    background-color: white;
-    -webkit-transition-duration: 400ms;
-       -moz-transition-duration: 400ms;
-         -o-transition-duration: 400ms;
-            transition-duration: 400ms; }
 
 @media (max-width: 768px) {
   html {
@@ -700,14 +685,6 @@ body::after {
 .m-top {
   margin-top: 9.6rem; }
 
-.row.certificate-row {
-  margin-top: 6rem;
-  margin-bottom: 3.7rem; }
-
-.certificate-text {
-  display: inline-block;
-  font: 500 15px Roboto; }
-
 @media (max-width: 768px) {
   .about-img {
     margin-right: 3rem; } }
@@ -719,6 +696,29 @@ body::after {
     width: 100%;
     margin-right: 0;
     margin-bottom: 10px; } }
+
+.certificate {
+  width: 30%;
+  margin: 0 1.5rem 4rem 1.5rem; }
+
+.certificate-text {
+  display: inline-block;
+  font: 500 15px Roboto; }
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .certificate-text {
+    font-weight: 400;
+    font-size: 14px; } }
+
+@media (max-width: 768px) {
+  .certificate {
+    width: 45%; } }
+
+@media (max-width: 550px) {
+  .certificate {
+    width: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem; } }
 
 .services-row {
   margin-top: 6rem;
@@ -1370,9 +1370,7 @@ input[type='radio']:checked:after {
      -moz-border-radius: 3px;
           border-radius: 3px;
   border: solid 0.5px #868BA2;
-  /* width: 390px; */
-  height: 40px;
-  /* margin: 200px; */ }
+  height: 40px; }
 
 .b-invoice__input {
   opacity: 0;

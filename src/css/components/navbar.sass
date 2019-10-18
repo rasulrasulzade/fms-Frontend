@@ -2,6 +2,7 @@
   padding: 0!important
   font: 400 14px $main-font
   text-decoration: none
+  box-shadow: none!important
 .navbar-logo
   font-size: 10px!important
   margin-right: 16.86em!important
@@ -54,23 +55,27 @@
   justify-content: center
 .searchInput
   outline: 0
-  border: 0
+  // border: 0
+  border-top: solid 1px $main-color
+  border-bottom: solid 1px $main-color
+  border-left: solid 1px $main-color
   font: 400 14px $main-font
   border-radius: 20px 0 0 20px
   padding: 5px 5px 5px 12px
   width: 88%
   height: 100%
-  box-shadow: 0 10px 20px $shadow-color
 .searchBtn
   outline: 0
   border: 0
+  border-top: solid 1px $main-color
+  border-bottom: solid 1px $main-color
+  border-right: solid 1px $main-color
   font: 400 14px $main-font
   border-radius: 0 20px 20px 0
   margin-left: -3px
   padding: 5px 
   width: 12%
   background-color: white
-  box-shadow: 0 10px 20px $shadow-color
 .drop
   .navbarLink
     cursor: pointer
@@ -104,17 +109,9 @@
     position: relative
     display: block!important
     width: 100%!important
-    margin: 0 0 8px 0
+    margin: 8px 0
     top: 0
     padding: 0 2rem
-    // .searchInput
-    //   border-top: solid 1px $main-color
-    //   border-bottom: solid 1px $main-color
-    //   border-left: solid 1px $main-color
-    // .searchBtn
-    //   border-top: solid 1px $main-color
-    //   border-bottom: solid 1px $main-color
-    //   border-right: solid 1px $main-color
   .collapse-box__search
     margin-left: 2rem
     margin-bottom: 0.5rem
