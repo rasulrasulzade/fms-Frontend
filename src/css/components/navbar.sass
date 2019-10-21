@@ -55,7 +55,6 @@
   justify-content: center
 .searchInput
   outline: 0
-  // border: 0
   border-top: solid 1px $main-color
   border-bottom: solid 1px $main-color
   border-left: solid 1px $main-color
@@ -80,17 +79,29 @@
   .navbarLink
     cursor: pointer
 .dropdown
-  display: none
+  visibility: hidden
+  opacity: 0
+  margin-left: -10px
   border-radius: 3px
   padding-left: 1rem 
   position: absolute!important
   position: absolute
   background-color: white
-  transition: all 0.4s ease
+  transition: all 0.6s ease
   z-index: 200
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0   6px 6px rgba($shadow-color,0.23)
+.drop-arrow
+  font-size: 1.5rem
+  color: $button-color
+  width: 10px
+  height: auto
+  transition: all 0.4s
 .drop:hover .dropdown
-  display: block
-  // transition: 0.6s all
+  visibility: visible
+  opacity: 1
+  margin-left: 0
+.active-link
+  color: $button-color!important
 @media (max-width: 1200px)
   html
     font-size: 8px!important
@@ -98,8 +109,14 @@
     font-size: 2px!important
 @media (max-width: 991px)
   .dropdown
+    display: none
+    visibility: visible
+    opacity: 1
+    margin-left: 0
     position: relative!important
     padding-left: 4rem
+    box-shadow: none
+    transition: none
   .ul-box
     display: block
     float: left
@@ -125,3 +142,5 @@
     width: 142px
     margin-top: 1rem
     margin-bottom: 1rem
+  .option-group
+    margin-top: 1rem

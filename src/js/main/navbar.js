@@ -7,14 +7,16 @@ const navbar = ()=> {
 		$(".searchBox").slideToggle("fast");
 		$(".searchInput").focus();
 	});
-}
-// const closeNav = ()=> {
 
-	
-// 	const nav = $('.b-nav')
-// 	nav.removeClass('b-nav--active')
-	
-// }
+	let x=$('.dropdown').css('display')
+	if (x=='none') {
+		$('.drop').click(function(){
+		$(this).find('.dropdown').slideToggle();
+		$(this).find('.navbarLink:first').toggleClass('active-link');
+		});
+	}
+}
+
 const documentListener = (cb=null) => {
 	$(document).on('click touchstart', (e)=>{
 		const _this = $(e.target)
@@ -34,7 +36,5 @@ const documentListener = (cb=null) => {
 		// }
 		
 	})
-}
-documentListener();
-
-export default navbar
+}	
+export {navbar, documentListener}

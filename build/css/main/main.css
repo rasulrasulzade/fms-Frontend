@@ -246,7 +246,9 @@ a {
   cursor: pointer; }
 
 .dropdown {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  margin-left: -10px;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
@@ -254,14 +256,32 @@ a {
   position: absolute !important;
   position: absolute;
   background-color: white;
-  -webkit-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  z-index: 200; }
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  z-index: 200;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(232, 242, 255, 0.23);
+     -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(232, 242, 255, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(232, 242, 255, 0.23); }
+
+.drop-arrow {
+  font-size: 1.5rem;
+  color: #F7791C;
+  width: 10px;
+  height: auto;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s; }
 
 .drop:hover .dropdown {
-  display: block; }
+  visibility: visible;
+  opacity: 1;
+  margin-left: 0; }
+
+.active-link {
+  color: #F7791C !important; }
 
 @media (max-width: 1200px) {
   html {
@@ -271,8 +291,19 @@ a {
 
 @media (max-width: 991px) {
   .dropdown {
+    display: none;
+    visibility: visible;
+    opacity: 1;
+    margin-left: 0;
     position: relative !important;
-    padding-left: 4rem; }
+    padding-left: 4rem;
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    -moz-transition: none;
+    transition: none; }
   .ul-box {
     display: block;
     float: left;
@@ -297,7 +328,9 @@ a {
   .collapse-box__language {
     width: 142px;
     margin-top: 1rem;
-    margin-bottom: 1rem; } }
+    margin-bottom: 1rem; }
+  .option-group {
+    margin-top: 1rem; } }
 
 .main {
   padding: 0 !important; }
@@ -757,7 +790,8 @@ body::after {
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-decoration: none !important; }
+  text-decoration: none !important;
+  text-align: left !important; }
 
 .plus-icon {
   color: #868BA2;
