@@ -72,12 +72,12 @@ a {
   height: 0.1px; }
 
 .contentHeader {
-  font: 500 32px Roboto;
+  font: 500 32px Roboto, sans-serif;
   color: #445666;
   text-align: center; }
 
 .contentText {
-  font: 400 14px Roboto;
+  font: 400 14px Roboto, sans-serif;
   color: #445666; }
 
 .contentBtn {
@@ -120,7 +120,7 @@ a {
           flex-wrap: wrap;
   margin: 2.8rem 0 0 0;
   background-color: white !important;
-  font: 400 14px Roboto; }
+  font: 400 14px Roboto, sans-serif; }
 
 .breadCrumb-passive-link {
   color: #868BA2 !important; }
@@ -135,7 +135,7 @@ a {
 
 .myNav {
   padding: 0 !important;
-  font: 400 14px Roboto;
+  font: 400 14px Roboto, sans-serif;
   text-decoration: none;
   -webkit-box-shadow: none !important;
      -moz-box-shadow: none !important;
@@ -154,7 +154,7 @@ a {
 .navbarLink {
   min-width: 100%;
   color: #445666 !important;
-  font: 400 14px Roboto;
+  font: 400 14px Roboto, sans-serif;
   padding-left: 0 !important;
   padding-right: 1.7rem !important; }
   .navbarLink:hover {
@@ -219,7 +219,7 @@ a {
   border-top: solid 1px #445666;
   border-bottom: solid 1px #445666;
   border-left: solid 1px #445666;
-  font: 400 14px Roboto;
+  font: 400 14px Roboto, sans-serif;
   -webkit-border-radius: 20px 0 0 20px;
      -moz-border-radius: 20px 0 0 20px;
           border-radius: 20px 0 0 20px;
@@ -233,7 +233,7 @@ a {
   border-top: solid 1px #445666;
   border-bottom: solid 1px #445666;
   border-right: solid 1px #445666;
-  font: 400 14px Roboto;
+  font: 400 14px Roboto, sans-serif;
   -webkit-border-radius: 0 20px 20px 0;
      -moz-border-radius: 0 20px 20px 0;
           border-radius: 0 20px 20px 0;
@@ -378,7 +378,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   color: white;
-  font-family: Roboto; }
+  font-family: Roboto, sans-serif; }
   .carousel-item__content .carousel-item__text {
     font-size: 20px;
     font-weight: 300;
@@ -423,7 +423,7 @@ a {
           justify-content: space-between; }
 
 .content-header {
-  font: 500 32px Roboto;
+  font: 500 32px Roboto, sans-serif;
   margin-top: 9.6rem;
   margin-bottom: 7.9rem;
   display: -webkit-box;
@@ -441,7 +441,7 @@ a {
 
 .common-content {
   text-align: center;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
   color: #445666; }
   .common-content .common-content__name {
@@ -703,13 +703,13 @@ body::after {
   content: url("../../img/r-arrow-white.svg"); }
 
 .aboutHeader {
-  font: 500 32px Roboto;
+  font: 500 32px Roboto, sans-serif;
   color: #445666;
   text-align: center;
   margin: 5.6rem 0 5.9rem 0; }
 
 .about-text {
-  font: 400 14px Roboto;
+  font: 400 14px Roboto, sans-serif;
   color: #445666; }
 
 .about-img {
@@ -736,7 +736,7 @@ body::after {
 
 .certificate-text {
   display: inline-block;
-  font: 500 15px Roboto; }
+  font: 500 15px Roboto, sans-serif; }
 
 @media (min-width: 769px) and (max-width: 991px) {
   .certificate-text {
@@ -773,7 +773,7 @@ body::after {
 .accordion-item__header {
   margin-bottom: 0;
   padding: 1px 0 !important;
-  font: 400 2.5rem Roboto !important;
+  font: 400 2.5rem Roboto, sans-serif !important;
   color: #445666 !important;
   display: -webkit-box !important;
   display: -webkit-flex !important;
@@ -803,7 +803,7 @@ body::after {
 
 .accordion-item__text {
   padding: 0.8rem 2.5rem 3.2rem 2.5rem;
-  font: 400 14px Roboto;
+  font: 400 14px Roboto, sans-serif;
   color: #868BA2; }
 
 .accordion-item--active {
@@ -851,7 +851,7 @@ body::after {
           flex-direction: row; }
 
 .wia-text {
-  font: 400 14px Roboto;
+  font: 400 14px Roboto, sans-serif;
   color: #445666; }
 
 .MB-20 {
@@ -861,7 +861,7 @@ body::after {
   margin-bottom: 20.8rem; }
 
 .wia-header {
-  font: 500 32px Roboto;
+  font: 500 32px Roboto, sans-serif;
   color: #445666;
   text-align: center;
   margin: 9.6rem 0 5.9rem 0; }
@@ -890,13 +890,13 @@ body::after {
             transition-duration: 400ms; }
 
 .equipmentHeader {
-  font: 500 32px Roboto;
+  font: 500 32px Roboto, sans-serif;
   color: #445666;
   text-align: center;
   margin: 5.6rem 0 14.5rem 0; }
 
 .equipment-list__item {
-  font: 400 25px Roboto;
+  font: 400 25px Roboto, sans-serif;
   color: #445666; }
 
 .equipment-list__img {
@@ -1029,7 +1029,7 @@ body::after {
   transition: 0.4s all; }
 
 .rights-item__header {
-  font: 500 2.5rem Roboto;
+  font: 500 2.5rem Roboto, sans-serif;
   color: #445666; }
 
 @media (max-width: 400px) {
@@ -1050,7 +1050,7 @@ body::after {
   margin-bottom: 1.8rem; }
 
 .contact-item__text {
-  font: 200 14px Roboto;
+  font: 200 14px Roboto, sans-serif;
   color: #868BA2; }
 
 .contact-item__link {
@@ -1072,7 +1072,7 @@ body::after {
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
-  font: 400 14px Roboto;
+  font: 400 14px Roboto, sans-serif;
   color: #445666;
   outline: none !important; }
   .contactInput:focus {
@@ -1125,7 +1125,7 @@ body::after {
           justify-content: space-between; }
 
 .oneOfNewsHeader {
-  font: 500 32px Roboto;
+  font: 500 32px Roboto, sans-serif;
   color: #445666;
   text-align: center; }
 
@@ -1157,7 +1157,7 @@ body::after {
           border-radius: 50%; }
 
 .oneOfNewsDate {
-  font: 200 14px Roboto;
+  font: 200 14px Roboto, sans-serif;
   color: #445666; }
 
 .news-line {
@@ -1195,7 +1195,7 @@ body::after {
           align-items: center; }
 
 .tags-text {
-  font: 500 14px Roboto;
+  font: 500 14px Roboto, sans-serif;
   color: #445666; }
 
 .tags-input {
@@ -1204,7 +1204,7 @@ body::after {
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
-  font: 300 14px Roboto;
+  font: 300 14px Roboto, sans-serif;
   color: #445666; }
 
 .share-box {
@@ -1251,7 +1251,7 @@ body::after {
     margin-bottom: 13rem; } }
 
 .gender-option {
-  font: 200 14px Roboto;
+  font: 200 14px Roboto, sans-serif;
   color: #445666;
   margin-bottom: 0; }
 
@@ -1336,7 +1336,7 @@ input[type='radio']:checked:after {
   -webkit-border-radius: 3px !important;
      -moz-border-radius: 3px !important;
           border-radius: 3px !important;
-  font: 400 18px Roboto !important;
+  font: 400 18px Roboto, sans-serif !important;
   color: #445666 !important;
     color-outline: none !important;
     color-transition: 0.4s all; }
@@ -1374,7 +1374,7 @@ input[type='radio']:checked:after {
 .no-robot {
   width: 120px;
   height: 50px;
-  font: 700 28px Roboto;
+  font: 700 28px Roboto, sans-serif;
   font-style: italic;
   color: #445666;
   text-align: center;
@@ -1441,14 +1441,14 @@ input[type='radio']:checked:after {
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font: 200 14px Roboto;
+  font: 200 14px Roboto, sans-serif;
   color: #445666; }
 
 .b-invoice__extensions {
   display: block; }
 
 .add-file__text {
-  font: 200 14px Roboto;
+  font: 200 14px Roboto, sans-serif;
   color: #445666; }
 
 @media (max-width: 767px) {
