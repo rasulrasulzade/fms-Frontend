@@ -21,39 +21,25 @@ $(document).ready(function(){
 
  contact__OrangeText();
 
-ymaps.ready(init);
-        function init(){
-            var myMap = new ymaps.Map("map", {
-                center: [40.387659, 49.815589],
-                zoom: 17,
-                // controls: ['zoomControl', 'fullscreenControl']
-            });
-            // myGeoObject = new ymaps.GeoObject({
-            //   geometry: {
-            //     type: "Point", // geometry type - point
-            //     coordinates: [52.5200, 13.4050] // координаты точки
-            //   }
-            // });
-              // myMap.geoObjects.add(myGeoObject); // Placing a geo object on the map.
-
-              // from FIZZA
-               var myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-                                          balloonContent: '<strong>blue</strong> color',
-                                          iconCaption: 'Fizza'
-                                      }, {
-                                          // Опции.
-                                          // Необходимо указать данный тип макета.
-                                          iconLayout: 'default#image',
-                                          // Своё изображение иконки метки.
-                                          iconImageHref: 'img/maps-and-flags.png',
-                                          // Размеры метки.
-                                          iconImageSize: [40, 55],
-                                          // Смещение левого верхнего угла иконки относительно
-                                          // её "ножки" (точки привязки).
-                                          // iconImageOffset: [-5, -38]
-                                      })
-                                      myMap.geoObjects.add(myPlacemark)
-            // the end
-         }
-
+// ymaps.ready(initMap);
+//         function initMap(){
+//             var myMap = new ymaps.Map("map", {
+//                 // center: [x, y],
+//                 // center: [40.387659, 49.815589],
+//                 zoom: 17,
+//                 // controls: ['zoomControl', 'fullscreenControl']
+//             });
+//               // from FMS
+//                var myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+//                                           balloonContent: '<strong>blue</strong> color',
+//                                           iconCaption: 'FMS'
+//                                       }, {
+//                                           iconLayout: 'default#image',
+//                                           iconImageHref: 'img/maps-and-flags.png',
+//                                           iconImageSize: [40, 55],
+//                                           // iconImageOffset: [-5, -38]
+//                                       })
+//                                       myMap.geoObjects.add(myPlacemark)
+//             // the end
+//          }
 });

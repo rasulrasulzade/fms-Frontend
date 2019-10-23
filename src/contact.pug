@@ -1,71 +1,135 @@
-extends pug_template/head
+doctype html
+html(xmlns="http://www.w3.org/1999/xhtml")
+    head
+        - var date = new Date().getTime();
+        meta(charset='utf-8')
+        meta(http-equiv='x-ua-compatible' content='ie=edge')
+        title FMS
+        meta(name='description' content='')
+        meta(name='viewport' content='width=device-width')
+        link(rel='manifest' href='site.webmanifest')
+        
+        //- // Place favicon.ico in the root directory
+        //- // <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> bootstrap is in main css
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css")
 
-block unique-content
-	.container-fluid.main
-			include pug_template/navbar.pug
-			.container.about-container
-				ol.breadCrumb
-					li.px-4.breadCrumb-item
-						a.breadCrumb-link(href='homePage.html') Ana səhifə
-					| |
-					li.px-4.breadCrumb-item.breadCrumb--active
-						| Əlaqə
-				.mt-5.spaceDiv
-				.mt-5.mb-5.contentHeader
-					| Bizimlə Əlaqə 
-				.mb-5.spaceDiv
-				.row.MB-9
-					.col-md-6.mb-5
-						.contact-item.mb-5
-							p.contentText
-								| Ünvan:
-							p.contact-item__text
-								| Bakı şəhəri Yasamal rayonu Şəfayət Mehdiyev küç. 133 A
-							a.contentText.contact-item__link.map-link(href='#map') 
-								| XƏRİTƏDƏ BAX 
-								i.fi-xnlrxl-chevron
-						.contact-item.mb-5
-							p.contentText
-								| Email:
-							p.contact-item__text
-								| info@fms.az
-								br
-								| sales@fms.az
-							a.contentText.contact-item__link(href='') 
-								| BİZƏ YAZ 
-								i.fi-xnlrxl-chevron
-						.contact-item.mb-5
-							p.contentText
-								| Ünvan:
-							p.contact-item__text
-								| +994123100707
-							a.contentText.contact-item__link(href='tel:+994123100707') 
-								| BİZƏ ZƏNG ET
-								i.fi-xnlrxl-chevron
-					.col-md-6
-						p.mb-5.contentText
-								| İrad və Təkliflərinizi bizə bildirin:
-						form.contact-form
-							.contact-form__item
-								p.contentText.contactInputText
-									| Ad və Soyad	
-								input.w-100.py-4.contactInput(type='text')
-							.contact-form__input-box
-								.contact-form__item
-									p.contentText.contactInputText
-										| Email
-									input.py-4.contactInput.W-24(type='Email')
-								.contact-form__item
-									p.contentText.contactInputText
-										| Mövzu	
-									input.py-4.contactInput.W-24(type='text')
-							.contact-form__item.mb-5
-								p.contentText.contactInputText
-									| Mesaj	
-								textarea.w-100.py-2.contactInput.H-19
-							button.contentBtn.float-right
-								| Göndər
-			.row.mx-0
-				.col-md-12.px-0
-					#map.map
-			include pug_template/footer.pug
+        link(rel='stylesheet' type="text/css" href=`./css/main/main.min.css?v=`+date)
+        link(rel='stylesheet' type="text/css" href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+        link(rel='stylesheet' type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css')
+        link(rel='stylesheet' type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css')
+
+        link(rel='stylesheet', type='text/css', href='slick/slick.css')
+        link(rel='stylesheet', type='text/css', href='slick/slick-theme.css')
+        //- script(type='text/javascript', src='slick/slick.min.js')
+
+
+        link(rel='apple-touch-icon', sizes='180x180', href='img/Favicon/apple-touch-icon.png')
+        link(rel='icon', type='image/png', sizes='32x32', href='img/Favicon/favicon-32x32.png')
+        link(rel='icon', type='image/png', sizes='16x16', href='img/Favicon/favicon-16x16.png')
+        link(rel='manifest', href='img/Favicon/site.webmanifest')
+        link(rel='mask-icon', href='img/Favicon/safari-pinned-tab.svg', color='#5bbad5')
+        meta(name='msapplication-TileColor', content='#f1f1f1')
+        meta(name='theme-color', content='#ffffff')
+    body
+        .container-fluid.main
+            include pug_template/navbar.pug
+            .container.about-container
+                ol.breadCrumb
+                    li.px-4.breadCrumb-item
+                        a.breadCrumb-link(href='homePage.html') Ana səhifə
+                    | |
+                    li.px-4.breadCrumb-item.breadCrumb--active
+                        | Əlaqə
+                .mt-5.spaceDiv
+                .mt-5.mb-5.contentHeader
+                    | Bizimlə Əlaqə 
+                .mb-5.spaceDiv
+                .row.MB-9
+                    .col-md-6.mb-5
+                        .contact-item.mb-5
+                            p.contentText
+                                | Ünvan:
+                            p.contact-item__text
+                                | Bakı şəhəri Yasamal rayonu Şəfayət Mehdiyev küç. 133 A
+                            a.contentText.contact-item__link.map-link(href='#map') 
+                                | XƏRİTƏDƏ BAX 
+                                i.fi-xnlrxl-chevron
+                        .contact-item.mb-5
+                            p.contentText
+                                | Email:
+                            p.contact-item__text
+                                | info@fms.az
+                                br
+                                | sales@fms.az
+                            a.contentText.contact-item__link(href='') 
+                                | BİZƏ YAZ 
+                                i.fi-xnlrxl-chevron
+                        .contact-item.mb-5
+                            p.contentText
+                                | Ünvan:
+                            p.contact-item__text
+                                | +994123100707
+                            a.contentText.contact-item__link(href='tel:+994123100707') 
+                                | BİZƏ ZƏNG ET
+                                i.fi-xnlrxl-chevron
+                    .col-md-6
+                        p.mb-5.contentText
+                                | İrad və Təkliflərinizi bizə bildirin:
+                        form.contact-form
+                            .contact-form__item
+                                p.contentText.contactInputText
+                                    | Ad və Soyad   
+                                input.w-100.py-4.contactInput(type='text')
+                            .contact-form__input-box
+                                .contact-form__item
+                                    p.contentText.contactInputText
+                                        | Email
+                                    input.py-4.contactInput.W-24(type='Email')
+                                .contact-form__item
+                                    p.contentText.contactInputText
+                                        | Mövzu 
+                                    input.py-4.contactInput.W-24(type='text')
+                            .contact-form__item.mb-5
+                                p.contentText.contactInputText
+                                    | Mesaj 
+                                textarea.w-100.py-2.contactInput.H-19
+                            button.contentBtn.float-right
+                                | Göndər
+            .row.mx-0
+                .col-md-12.px-0
+                    #map.map
+            include pug_template/footer.pug
+        script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
+        script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js')
+        script(type='text/javascript', src='slick/slick.min.js')
+            //- Yandex Map API link
+        script(src='https://api-maps.yandex.ru/2.1/?apikey=03a1d7f7-a8f8-4857-8c62-3eee5780c176&lang=en_US', type='text/javascript' crossorigin='anonymous')
+        //- script(src='js/jquery.mask.js')
+        //- script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js')
+        script(src='js/datepicker.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js')
+        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js')
+        script(src='js/all.js?v='+date)
+        script.
+            ymaps.ready(initMap);
+                var lat=40.387659;
+                var long=49.815589;
+                var centerCoordinates=[lat,long]
+                function initMap(){
+                    var myMap = new ymaps.Map("map", {
+                        center: centerCoordinates,
+                        zoom: 17,
+                    });
+                     var myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                                          balloonContent: '<strong>blue</strong> color',
+                                          iconCaption: 'FMS'
+                                      }, {
+                                          iconLayout: 'default#image',
+                                          iconImageHref: 'img/maps-and-flags.png',
+                                          iconImageSize: [40, 55],
+                                          // iconImageOffset: [-5, -38]
+                                      })
+                                      myMap.geoObjects.add(myPlacemark)
+            // the end
+                }
