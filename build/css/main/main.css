@@ -166,7 +166,8 @@ a {
     transition: 0.4s all; }
 
 .collapse-box__search {
-  margin-right: 2rem; }
+  margin-right: 2rem;
+  margin-bottom: -0.6rem; }
 
 .collapse-box__form {
   width: 13px; }
