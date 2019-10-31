@@ -82,6 +82,7 @@ a {
 
 .contentBtn {
   cursor: pointer;
+  outline: 0 !important;
   border: solid 1px #F7791C;
   font-size: 14px;
   font-weight: 300;
@@ -229,7 +230,7 @@ a {
   height: 100%; }
 
 .searchBtn {
-  outline: 0;
+  outline: 0 !important;
   border: 0;
   border-top: solid 1px #445666;
   border-bottom: solid 1px #445666;
