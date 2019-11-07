@@ -515,7 +515,7 @@ a {
     cursor: pointer; }
   .footer-inner .footer-contents {
     font-size: 14px !important;
-    font-family: Roboto; }
+    font-family: Roboto, sans-serif; }
     .footer-inner .footer-contents .footer-content {
       display: -webkit-box;
       display: -webkit-flex;
@@ -557,12 +557,6 @@ a {
   font-size: 10px; }
   .social-accounts__link:hover {
     opacity: 0.5; }
-
-.instagram-link {
-  padding-right: 0.8em; }
-
-.fb-link {
-  padding-left: 0.8em; }
 
 .copyright {
   margin-top: 9.3rem;
