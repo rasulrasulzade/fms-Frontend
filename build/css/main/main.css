@@ -53,8 +53,24 @@ a {
 .W-24 {
   width: 24rem; }
 
+.minW-153px {
+  min-width: 153px; }
+
+.maxW-220px {
+  max-width: 220px; }
+
 .H-19 {
   height: 19rem; }
+
+.PR-17px {
+  padding-right: 1.7rem; }
+
+.oneLineText {
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  overflow: hidden;
+  display: inherit; }
 
 .space-between {
   display: -webkit-box;
