@@ -17,11 +17,12 @@ const addFile = ()=> {
       const extensions = $('.b-invoice__extensions')
       extensions.text('')
 
-      for (var i = 0; i < files.length; i++){
-        const ext = files[i].name.split('.').pop().toLowerCase()
-        extensions.append($(`<div class="b-invoice__ext">${ext}</div>`))
-      }
-
+     
+	    if(files.length == 1) {
+	    	extensions.append($(`<div class="b-invoice__ext">${files[0].name}</div>`))
+	    } else if (files.length > 1) {
+	    	extensions.append($(`<div class="b-invoice__ext">${files.length} Fayl seçildi</div>`))
+	    }
     })
 }
 export {orangeText, addFile}

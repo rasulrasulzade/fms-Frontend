@@ -3,7 +3,7 @@ extends pug_template/head
 block unique-content
         .container-fluid.main
             include pug_template/navbar.pug
-            #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+            #carouselExampleIndicators.carousel.slide(data-ride='')
                 ol.carousel-indicators.carousel--indicators
                     li.carousel--indicator.active(data-target='#carouselExampleIndicators', data-slide-to='0')
                     li.carousel--indicator(data-target='#carouselExampleIndicators', data-slide-to='1')
@@ -19,7 +19,7 @@ block unique-content
                             a(href="").carousel-item__button
                                 | Ətraflı
                     .carousel-item
-                        img.d-block.w-100(src='img/slide2.jpg', alt='village way')
+                        img.d-block.w-100(src='img/slide2.jpg', alt='way')
                         .carousel-item__content
                             p.carousel-item__text 
                                 | Excepteur sint occaecat cupidatat non proiden
@@ -28,7 +28,7 @@ block unique-content
                             a(href="").carousel-item__button
                                 | Ətraflı
                     .carousel-item
-                        img.d-block.w-100(src='img/slide3.jpg', alt='happiness')
+                        img.d-block.w-100(src='img/slide3.jpg', alt='way')
                         .carousel-item__content
                             p.carousel-item__text 
                                 | Excepteur sint occaecat cupidatat non proiden
